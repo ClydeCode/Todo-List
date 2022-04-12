@@ -10,6 +10,7 @@ body {
 .nav-bar {
     background-color: rgba(155, 155, 155, .25);
     border-right: 1px solid rgba(0, 0, 0, .2);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .nav-bar .pages {
@@ -18,7 +19,6 @@ body {
     align-items: left;
     gap: 30px;
     font-size: 1.2rem;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     letter-spacing: 1px;
     color: black;
 }
@@ -63,4 +63,34 @@ body {
 .nav-bar .active {
     background-color: rgba(0, 0, 0, .09);
     border-radius: 6px;
+}
+
+.nav-bar .projects-list {
+    /* background-color: rgb(209, 209, 209); */
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow: scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    font-size: .93rem;
+}
+
+.nav-bar .projects-list .list:nth-child(1) {
+    margin-top: 20px;
+}
+
+.nav-bar .projects-list .list {
+    margin-left: 75px;
+    padding: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: 300px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.nav-bar .projects-list .list:hover {
+    background-color: rgba(0, 0, 0, .05);
 }
