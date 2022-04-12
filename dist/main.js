@@ -16,7 +16,7 @@
   \**************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://todo-list/./src/styles.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"body {\\n    padding: 0;\\n    margin: 0;\\n    display: grid;\\n    grid-template-columns: 1fr 3fr;\\n    height: 100vh;\\n    background-color: white;\\n}\\n\\n.nav-bar {\\n    background-color: rgba(155, 155, 155, .25);\\n    border-right: 1px solid rgba(0, 0, 0, .2);\\n}\\n\\n.nav-bar .pages {\\n    display: flex;\\n    flex-direction: column;\\n    align-items: left;\\n    gap: 30px;\\n    font-size: 1.2rem;\\n    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;\\n    letter-spacing: 1px;\\n    color: black;\\n}\\n\\n.nav-bar .pages .page:nth-child(1) {\\n    margin-top: 20px;\\n}\\n\\n.nav-bar .pages .page:nth-child(4) img {\\n    width: 40px;\\n    height: 40px;\\n    margin-left: 3px;\\n}\\n\\n.nav-bar .pages .page:nth-child(4) #arrow {\\n    margin-left: 155px;\\n    width: 35px;\\n    height: 35px;\\n}\\n\\n.nav-bar .pages .page {\\n    margin-left: 20px;\\n    padding: 15px;\\n    /* padding-left: 80px; */\\n    width: 370px;\\n    display: flex;\\n    align-items: center;\\n    gap: 25px;\\n}\\n\\n.pages .page img {\\n    height: 43px;\\n    width: 43px;\\n}\\n\\n.nav-bar .pages .page:hover {\\n    background-color: rgba(0, 0, 0, .05);\\n    border-radius: 6px;\\n    cursor: pointer;\\n}\\n\\n.nav-bar .active {\\n    background-color: rgba(0, 0, 0, .09);\\n    border-radius: 6px;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://todo-list/./src/styles.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -116,7 +116,57 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n\n\n//# sourceURL=webpack://todo-list/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _assets_icon_suitcase_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/icon-suitcase.png */ \"./src/assets/icon-suitcase.png\");\n/* harmony import */ var _assets_icon_travel_book_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/icon-travel-book.png */ \"./src/assets/icon-travel-book.png\");\n/* harmony import */ var _assets_icon_traveler_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/icon-traveler.png */ \"./src/assets/icon-traveler.png\");\n/* harmony import */ var _assets_layers_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/layers.png */ \"./src/assets/layers.png\");\n/* harmony import */ var _assets_icon_expand_arrow_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/icon-expand-arrow.png */ \"./src/assets/icon-expand-arrow.png\");\n\n\n\n\n\n\n\n//# sourceURL=webpack://todo-list/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/assets/icon-expand-arrow.png":
+/*!******************************************!*\
+  !*** ./src/assets/icon-expand-arrow.png ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"b366904896f3eaead5d9.png\";\n\n//# sourceURL=webpack://todo-list/./src/assets/icon-expand-arrow.png?");
+
+/***/ }),
+
+/***/ "./src/assets/icon-suitcase.png":
+/*!**************************************!*\
+  !*** ./src/assets/icon-suitcase.png ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"cb8eb20440af740c236d.png\";\n\n//# sourceURL=webpack://todo-list/./src/assets/icon-suitcase.png?");
+
+/***/ }),
+
+/***/ "./src/assets/icon-travel-book.png":
+/*!*****************************************!*\
+  !*** ./src/assets/icon-travel-book.png ***!
+  \*****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"a98b8d9c8add211a74ce.png\";\n\n//# sourceURL=webpack://todo-list/./src/assets/icon-travel-book.png?");
+
+/***/ }),
+
+/***/ "./src/assets/icon-traveler.png":
+/*!**************************************!*\
+  !*** ./src/assets/icon-traveler.png ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"aac5441b3489e5051263.png\";\n\n//# sourceURL=webpack://todo-list/./src/assets/icon-traveler.png?");
+
+/***/ }),
+
+/***/ "./src/assets/layers.png":
+/*!*******************************!*\
+  !*** ./src/assets/layers.png ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"3ea47a60dbac3815aaad.png\";\n\n//# sourceURL=webpack://todo-list/./src/assets/layers.png?");
 
 /***/ })
 
@@ -171,6 +221,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -185,6 +247,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/

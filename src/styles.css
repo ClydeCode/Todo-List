@@ -1,0 +1,66 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 100vh;
+    background-color: white;
+}
+
+.nav-bar {
+    background-color: rgba(155, 155, 155, .25);
+    border-right: 1px solid rgba(0, 0, 0, .2);
+}
+
+.nav-bar .pages {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 30px;
+    font-size: 1.2rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.nav-bar .pages .page:nth-child(1) {
+    margin-top: 20px;
+}
+
+.nav-bar .pages .page:nth-child(4) img {
+    width: 40px;
+    height: 40px;
+    margin-left: 3px;
+}
+
+.nav-bar .pages .page:nth-child(4) #arrow {
+    margin-left: 155px;
+    width: 35px;
+    height: 35px;
+}
+
+.nav-bar .pages .page {
+    margin-left: 20px;
+    padding: 15px;
+    /* padding-left: 80px; */
+    width: 370px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.pages .page img {
+    height: 43px;
+    width: 43px;
+}
+
+.nav-bar .pages .page:hover {
+    background-color: rgba(0, 0, 0, .05);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.nav-bar .active {
+    background-color: rgba(0, 0, 0, .09);
+    border-radius: 6px;
+}
