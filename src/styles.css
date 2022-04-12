@@ -34,9 +34,10 @@ body {
 }
 
 .nav-bar .pages .page:nth-child(4) #arrow {
-    margin-left: 155px;
-    width: 35px;
-    height: 35px;
+    margin-left: 160px;
+    width: 28px;
+    height: 28px;
+    rotate: 180deg;
 }
 
 .nav-bar .pages .page {
@@ -70,7 +71,7 @@ body {
     height: 340px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
     overflow: scroll;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;
@@ -84,8 +85,8 @@ body {
 .nav-bar .projects-list .list {
     margin-left: 75px;
     padding: 15px;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     width: 300px;
     border-radius: 3px;
     cursor: pointer;
