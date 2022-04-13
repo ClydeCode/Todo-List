@@ -36,4 +36,16 @@ function createIndicator() {
     return svg;
 };
 
-export { setTitle, createList };
+function setActive(id) {
+    removeAnyActives();
+
+    const element = document.getElementById(id);
+    element.classList.add('active');
+}
+
+function removeAnyActives() {
+    const elements = document.querySelectorAll('.active');
+    elements.forEach(item => item.classList.remove('active'));
+}
+
+export { setTitle, createList, setActive };
