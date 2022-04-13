@@ -3,4 +3,37 @@ function setTitle(name) {
     title.innerHTML = name;
 }
 
-export { setTitle };
+function createList(name, date) {
+    const tabs = document.querySelector('.tabs');
+
+    const div = document.createElement('div');
+    div.className = 'tab';
+    div.innerHTML = name;
+
+    const divDate = document.createElement('div');
+    divDate.className = 'date';
+    divDate.innerHTML = date;
+
+    tabs.appendChild(div);
+    div.insertBefore(createIndicator(), div.firstChild);
+    div.appendChild(divDate);
+}
+
+function createIndicator() {
+    const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+
+    svg.setAttribute('height', '18');
+    svg.setAttribute('width', '18');
+
+    circle.setAttribute('cx', '9');
+    circle.setAttribute('cy', '9');  
+    circle.setAttribute('r', '5');
+    circle.setAttribute('stroke', 'black');
+
+    svg.appendChild(circle);
+
+    return svg;
+};
+
+export { setTitle, createList };
