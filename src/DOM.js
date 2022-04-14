@@ -1,4 +1,4 @@
-let rotation = 0;
+let rotation = 180;
 
 function setTitle(name) {
     const title = document.querySelector('.title');
@@ -55,4 +55,12 @@ function rotateArrow() {
     rotation += 180;
 }
 
-export { setTitle, createList, setActive, rotateArrow };
+function hideList() {
+    if (document.querySelector('.projects-list').style.visibility === '' ||
+    document.querySelector('.projects-list').style.visibility === 'visible')
+        document.querySelector('.projects-list').style.visibility = 'hidden';
+    else
+        document.querySelector('.projects-list').style.visibility = 'visible';
+}
+
+export { setTitle, createList, setActive, rotateArrow, hideList };
