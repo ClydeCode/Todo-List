@@ -7,6 +7,7 @@ import icon5 from './assets/icon-expand-arrow.png';
 import { initInbox } from './inbox';
 import { initToday } from './today';
 import { initUpcoming } from './upcoming';
+import { expandProjects } from './projects';
 
 const pages = document.querySelectorAll('.page');
 
@@ -22,6 +23,9 @@ pages.forEach(page => page.addEventListener('click', () => {
             break;
         case 'upcoming':
             initUpcoming();
+            break;
+        case 'projects':
+            expandProjects();
             break;
     };
 }));

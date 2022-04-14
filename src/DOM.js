@@ -1,3 +1,5 @@
+let rotation = 0;
+
 function setTitle(name) {
     const title = document.querySelector('.title');
     title.innerHTML = name;
@@ -48,4 +50,9 @@ function removeAnyActives() {
     elements.forEach(item => item.classList.remove('active'));
 }
 
-export { setTitle, createList, setActive };
+function rotateArrow() {
+    document.getElementById('arrow').style.transform = `rotate(${(rotation)+'deg'})`;
+    rotation += 180;
+}
+
+export { setTitle, createList, setActive, rotateArrow };
