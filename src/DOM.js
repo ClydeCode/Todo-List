@@ -57,8 +57,8 @@ function rotateArrow() {
 
 function hideList() {
     if (document.querySelector('.projects-list').style.visibility === '' ||
-    document.querySelector('.projects-list').style.visibility === 'visible')
-        document.querySelector('.projects-list').style.visibility = 'hidden';
+        document.querySelector('.projects-list').style.visibility === 'visible')
+            document.querySelector('.projects-list').style.visibility = 'hidden';
     else
         document.querySelector('.projects-list').style.visibility = 'visible';
 }
