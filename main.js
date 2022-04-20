@@ -16,7 +16,7 @@
   \**************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"body {\\n    padding: 0;\\n    margin: 0;\\n    display: grid;\\n    grid-template-columns: 1fr 3fr;\\n    height: 100vh;\\n    background-color: white;\\n    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;\\n    overflow: hidden;\\n}\\n\\n.nav-bar {\\n    background-color: rgba(155, 155, 155, .25);\\n    border-right: 1px solid rgba(0, 0, 0, .2);\\n}\\n\\n.nav-bar .pages {\\n    display: flex;\\n    flex-direction: column;\\n    align-items: left;\\n    gap: 30px;\\n    font-size: 1.2rem;\\n    letter-spacing: 1px;\\n    color: black;\\n}\\n\\n.nav-bar .pages .page:nth-child(1) {\\n    margin-top: 20px;\\n}\\n\\n.nav-bar .pages .page:nth-child(4) img {\\n    width: 40px;\\n    height: 40px;\\n    margin-left: 3px;\\n}\\n\\n.nav-bar .pages .page:nth-child(4) #arrow {\\n    margin-left: 160px;\\n    width: 28px;\\n    height: 28px;\\n    rotate: 180deg;\\n}\\n\\n.nav-bar .pages .page {\\n    margin-left: 20px;\\n    padding: 15px;\\n    /* padding-left: 80px; */\\n    width: 370px;\\n    display: flex;\\n    align-items: center;\\n    gap: 25px;\\n}\\n\\n.pages .page img {\\n    height: 43px;\\n    width: 43px;\\n}\\n\\n.nav-bar .pages .page:hover {\\n    background-color: rgba(0, 0, 0, .05);\\n    border-radius: 6px;\\n    cursor: pointer;\\n}\\n\\n.nav-bar .active {\\n    background-color: rgba(0, 0, 0, .09);\\n    border-radius: 6px;\\n}\\n\\n.nav-bar .projects-list {\\n    /* background-color: rgb(209, 209, 209); */\\n    height: 340px;\\n    display: flex;\\n    flex-direction: column;\\n    gap: 12px;\\n    overflow: scroll;\\n    -ms-overflow-style: none;  /* Internet Explorer 10+ */\\n    scrollbar-width: none;\\n    font-size: .93rem;\\n}\\n\\n.nav-bar .projects-list .list:nth-child(1) {\\n    margin-top: 20px;\\n}\\n\\n.nav-bar .projects-list .list {\\n    margin-left: 75px;\\n    padding: 15px;\\n    padding-top: 5px;\\n    padding-bottom: 5px;\\n    width: 300px;\\n    border-radius: 3px;\\n    cursor: pointer;\\n}\\n\\n.nav-bar .projects-list .list:hover {\\n    background-color: rgba(0, 0, 0, .05);\\n}\\n\\n.content {\\n    padding: 40px;\\n    position: relative;\\n}\\n\\n.content .title {\\n    font-size: 1.6rem;\\n}\\n\\n.content .tabs {\\n    display: flex;\\n    flex-direction: column;\\n    gap: 15px;\\n    padding: 15px;\\n    color: white;\\n    height: 90vh;\\n    overflow: scroll;\\n    margin-top: 15px;\\n}\\n\\n.content .tab {\\n    display: flex;\\n    gap: 20px;\\n    background-color: coral;\\n    border-radius: 6px;\\n    padding-top: 7px;\\n    padding-bottom: 7px;\\n    padding-left: 10px;\\n    cursor: pointer;\\n}\\n\\n.date {\\n    margin-left: auto;\\n    margin-right: 15px;\\n}\\n\\nsvg {\\n    fill: rgba(255, 94, 0, .3);\\n}\\n\\nbutton {\\n    height: 60px;\\n    width: 60px;\\n    position: absolute;\\n    bottom: 130px;\\n    right: 90px;\\n    border-radius: 100%;\\n    font-size: 1.5rem;\\n    border-style: none;\\n    background-color: rgb(255, 94, 0);\\n    color:white;\\n    cursor: pointer;\\n}\\n\\nbutton:hover {\\n    background-color: rgba(255, 94, 0, .9);\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://todo-list/./src/styles.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"body {\\r\\n    padding: 0;\\r\\n    margin: 0;\\r\\n    display: grid;\\r\\n    grid-template-columns: 1fr 3fr;\\r\\n    height: 100vh;\\r\\n    background-color: white;\\r\\n    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;\\r\\n    overflow: hidden;\\r\\n}\\r\\n\\r\\n.nav-bar {\\r\\n    background-color: rgba(155, 155, 155, .25);\\r\\n    border-right: 1px solid rgba(0, 0, 0, .2);\\r\\n}\\r\\n\\r\\n.nav-bar .pages {\\r\\n    display: flex;\\r\\n    flex-direction: column;\\r\\n    align-items: left;\\r\\n    gap: 30px;\\r\\n    font-size: 1.2rem;\\r\\n    letter-spacing: 1px;\\r\\n    color: black;\\r\\n}\\r\\n\\r\\n.nav-bar .pages .page:nth-child(1) {\\r\\n    margin-top: 20px;\\r\\n}\\r\\n\\r\\n.nav-bar .pages .page:nth-child(4) img {\\r\\n    width: 40px;\\r\\n    height: 40px;\\r\\n    margin-left: 3px;\\r\\n}\\r\\n\\r\\n.nav-bar .pages .page:nth-child(4) #arrow {\\r\\n    margin-left: 160px;\\r\\n    width: 28px;\\r\\n    height: 28px;\\r\\n    rotate: 180deg;\\r\\n}\\r\\n\\r\\n.nav-bar .pages .page {\\r\\n    margin-left: 20px;\\r\\n    padding: 15px;\\r\\n    /* padding-left: 80px; */\\r\\n    width: 370px;\\r\\n    display: flex;\\r\\n    align-items: center;\\r\\n    gap: 25px;\\r\\n}\\r\\n\\r\\n.pages .page img {\\r\\n    height: 43px;\\r\\n    width: 43px;\\r\\n}\\r\\n\\r\\n.nav-bar .pages .page:hover {\\r\\n    background-color: rgba(0, 0, 0, .05);\\r\\n    border-radius: 6px;\\r\\n    cursor: pointer;\\r\\n}\\r\\n\\r\\n.nav-bar .active {\\r\\n    background-color: rgba(0, 0, 0, .09);\\r\\n    border-radius: 6px;\\r\\n}\\r\\n\\r\\n.nav-bar .projects-list {\\r\\n    /* background-color: rgb(209, 209, 209); */\\r\\n    height: 340px;\\r\\n    display: flex;\\r\\n    flex-direction: column;\\r\\n    gap: 12px;\\r\\n    overflow: scroll;\\r\\n    -ms-overflow-style: none;  /* Internet Explorer 10+ */\\r\\n    scrollbar-width: none;\\r\\n    font-size: .93rem;\\r\\n}\\r\\n\\r\\n.nav-bar .projects-list::-webkit-scrollbar { /* Hide scrollbar for Chrome, Safari and Opera */\\r\\n    display: none;\\r\\n}\\r\\n\\r\\n.nav-bar .projects-list .list:nth-child(1) {\\r\\n    margin-top: 20px;\\r\\n}\\r\\n\\r\\n.nav-bar .projects-list .list {\\r\\n    margin-left: 75px;\\r\\n    padding: 15px;\\r\\n    padding-top: 5px;\\r\\n    padding-bottom: 5px;\\r\\n    width: 300px;\\r\\n    border-radius: 3px;\\r\\n    cursor: pointer;\\r\\n}\\r\\n\\r\\n.nav-bar .projects-list .list:hover {\\r\\n    background-color: rgba(0, 0, 0, .05);\\r\\n}\\r\\n\\r\\n.content {\\r\\n    padding: 40px;\\r\\n    position: relative;\\r\\n}\\r\\n\\r\\n.content .title {\\r\\n    font-size: 1.6rem;\\r\\n}\\r\\n\\r\\n.content .tabs {\\r\\n    display: flex;\\r\\n    flex-direction: column;\\r\\n    gap: 15px;\\r\\n    padding: 15px;\\r\\n    color: white;\\r\\n    height: 90vh;\\r\\n    overflow: scroll;\\r\\n    margin-top: 15px;\\r\\n}\\r\\n\\r\\n.content .tabs::-webkit-scrollbar { /* Hide scrollbar for Chrome, Safari and Opera */\\r\\n    display: none;\\r\\n}\\r\\n\\r\\n.content .tab {\\r\\n    display: flex;\\r\\n    gap: 20px;\\r\\n    background-color: coral;\\r\\n    border-radius: 6px;\\r\\n    padding-top: 7px;\\r\\n    padding-bottom: 7px;\\r\\n    padding-left: 10px;\\r\\n    cursor: pointer;\\r\\n}\\r\\n\\r\\n.date {\\r\\n    margin-left: auto;\\r\\n    margin-right: 15px;\\r\\n}\\r\\n\\r\\nsvg {\\r\\n    fill: rgba(255, 94, 0, .3);\\r\\n}\\r\\n\\r\\nbutton {\\r\\n    height: 60px;\\r\\n    width: 60px;\\r\\n    position: absolute;\\r\\n    bottom: 130px;\\r\\n    right: 90px;\\r\\n    border-radius: 100%;\\r\\n    font-size: 1.5rem;\\r\\n    border-style: none;\\r\\n    background-color: rgb(255, 94, 0);\\r\\n    color:white;\\r\\n    cursor: pointer;\\r\\n}\\r\\n\\r\\nbutton:hover {\\r\\n    background-color: rgba(255, 94, 0, .9);\\r\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://todo-list/./src/styles.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -110,13 +110,63 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/DOM.js":
+/*!********************!*\
+  !*** ./src/DOM.js ***!
+  \********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createList\": () => (/* binding */ createList),\n/* harmony export */   \"hideList\": () => (/* binding */ hideList),\n/* harmony export */   \"rotateArrow\": () => (/* binding */ rotateArrow),\n/* harmony export */   \"setActive\": () => (/* binding */ setActive),\n/* harmony export */   \"setTitle\": () => (/* binding */ setTitle)\n/* harmony export */ });\nlet rotation = 180;\r\n\r\nfunction setTitle(name) {\r\n    const title = document.querySelector('.title');\r\n    title.innerHTML = name;\r\n}\r\n\r\nfunction createList(name, date) {\r\n    const tabs = document.querySelector('.tabs');\r\n\r\n    const div = document.createElement('div');\r\n    div.className = 'tab';\r\n    div.innerHTML = name;\r\n\r\n    const divDate = document.createElement('div');\r\n    divDate.className = 'date';\r\n    divDate.innerHTML = date;\r\n\r\n    tabs.appendChild(div);\r\n    div.insertBefore(createIndicator(), div.firstChild);\r\n    div.appendChild(divDate);\r\n}\r\n\r\nfunction createIndicator() {\r\n    const svg = document.createElementNS(\"http://www.w3.org/2000/svg\", \"svg\");\r\n    const circle = document.createElementNS(\"http://www.w3.org/2000/svg\", \"circle\");\r\n\r\n    svg.setAttribute('height', '18');\r\n    svg.setAttribute('width', '18');\r\n\r\n    circle.setAttribute('cx', '9');\r\n    circle.setAttribute('cy', '9');  \r\n    circle.setAttribute('r', '5');\r\n    circle.setAttribute('stroke', 'black');\r\n\r\n    svg.appendChild(circle);\r\n\r\n    return svg;\r\n};\r\n\r\nfunction setActive(id) {\r\n    removeAnyActives();\r\n\r\n    const element = document.getElementById(id);\r\n    element.classList.add('active');\r\n}\r\n\r\nfunction removeAnyActives() {\r\n    const elements = document.querySelectorAll('.active');\r\n    elements.forEach(item => item.classList.remove('active'));\r\n}\r\n\r\nfunction rotateArrow() {\r\n    document.getElementById('arrow').style.transform = `rotate(${(rotation)+'deg'})`;\r\n    rotation += 180;\r\n}\r\n\r\nfunction hideList() {\r\n    if (document.querySelector('.projects-list').style.visibility === '' ||\r\n        document.querySelector('.projects-list').style.visibility === 'visible')\r\n            document.querySelector('.projects-list').style.visibility = 'hidden';\r\n    else\r\n        document.querySelector('.projects-list').style.visibility = 'visible';\r\n}\r\n\r\n\n\n//# sourceURL=webpack://todo-list/./src/DOM.js?");
+
+/***/ }),
+
+/***/ "./src/inbox.js":
+/*!**********************!*\
+  !*** ./src/inbox.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"initInbox\": () => (/* binding */ initInbox)\n/* harmony export */ });\n/* harmony import */ var _DOM__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DOM */ \"./src/DOM.js\");\n\r\n\r\nfunction initInbox() {\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.setActive)('inbox');\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.setTitle)('Inbox');\r\n}\r\n\r\n\n\n//# sourceURL=webpack://todo-list/./src/inbox.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _assets_icon_suitcase_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/icon-suitcase.png */ \"./src/assets/icon-suitcase.png\");\n/* harmony import */ var _assets_icon_travel_book_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/icon-travel-book.png */ \"./src/assets/icon-travel-book.png\");\n/* harmony import */ var _assets_icon_traveler_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/icon-traveler.png */ \"./src/assets/icon-traveler.png\");\n/* harmony import */ var _assets_layers_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/layers.png */ \"./src/assets/layers.png\");\n/* harmony import */ var _assets_icon_expand_arrow_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/icon-expand-arrow.png */ \"./src/assets/icon-expand-arrow.png\");\n\n\n\n\n\n\n\n//# sourceURL=webpack://todo-list/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _assets_icon_suitcase_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/icon-suitcase.png */ \"./src/assets/icon-suitcase.png\");\n/* harmony import */ var _assets_icon_travel_book_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/icon-travel-book.png */ \"./src/assets/icon-travel-book.png\");\n/* harmony import */ var _assets_icon_traveler_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/icon-traveler.png */ \"./src/assets/icon-traveler.png\");\n/* harmony import */ var _assets_layers_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/layers.png */ \"./src/assets/layers.png\");\n/* harmony import */ var _assets_icon_expand_arrow_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/icon-expand-arrow.png */ \"./src/assets/icon-expand-arrow.png\");\n/* harmony import */ var _inbox__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./inbox */ \"./src/inbox.js\");\n/* harmony import */ var _today__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./today */ \"./src/today.js\");\n/* harmony import */ var _upcoming__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./upcoming */ \"./src/upcoming.js\");\n/* harmony import */ var _projects__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./projects */ \"./src/projects.js\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nconst pages = document.querySelectorAll('.page');\r\n\r\n(0,_inbox__WEBPACK_IMPORTED_MODULE_6__.initInbox)();\r\n\r\npages.forEach(page => page.addEventListener('click', () => {\r\n    switch(page.id) {\r\n        case 'inbox':\r\n            (0,_inbox__WEBPACK_IMPORTED_MODULE_6__.initInbox)();\r\n            break;\r\n        case 'today':\r\n            (0,_today__WEBPACK_IMPORTED_MODULE_7__.initToday)();\r\n            break;\r\n        case 'upcoming':\r\n            (0,_upcoming__WEBPACK_IMPORTED_MODULE_8__.initUpcoming)();\r\n            break;\r\n        case 'projects':\r\n            (0,_projects__WEBPACK_IMPORTED_MODULE_9__.expandProjects)();\r\n            break;\r\n    };\r\n}));\n\n//# sourceURL=webpack://todo-list/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/projects.js":
+/*!*************************!*\
+  !*** ./src/projects.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"expandProjects\": () => (/* binding */ expandProjects)\n/* harmony export */ });\n/* harmony import */ var _DOM__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DOM */ \"./src/DOM.js\");\n\r\n\r\n\r\nfunction expandProjects() {\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.rotateArrow)();\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.hideList)();\r\n}\r\n\r\n\n\n//# sourceURL=webpack://todo-list/./src/projects.js?");
+
+/***/ }),
+
+/***/ "./src/today.js":
+/*!**********************!*\
+  !*** ./src/today.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"initToday\": () => (/* binding */ initToday)\n/* harmony export */ });\n/* harmony import */ var _DOM__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DOM */ \"./src/DOM.js\");\n\r\n\r\nfunction initToday() {\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.setActive)('today');\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.setTitle)('Today');\r\n}\r\n\r\n\n\n//# sourceURL=webpack://todo-list/./src/today.js?");
+
+/***/ }),
+
+/***/ "./src/upcoming.js":
+/*!*************************!*\
+  !*** ./src/upcoming.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"initUpcoming\": () => (/* binding */ initUpcoming)\n/* harmony export */ });\n/* harmony import */ var _DOM__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DOM */ \"./src/DOM.js\");\n\r\n\r\nfunction initUpcoming() {\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.setActive)('upcoming');\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.setTitle)('Upcoming');\r\n}\r\n\r\n\n\n//# sourceURL=webpack://todo-list/./src/upcoming.js?");
 
 /***/ }),
 
@@ -126,7 +176,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
   \******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"b366904896f3eaead5d9.png\";\n\n//# sourceURL=webpack://todo-list/./src/assets/icon-expand-arrow.png?");
+eval("module.exports = __webpack_require__.p + \"icons/b366904896f3eaead5d9.png\";\n\n//# sourceURL=webpack://todo-list/./src/assets/icon-expand-arrow.png?");
 
 /***/ }),
 
@@ -136,7 +186,7 @@ eval("module.exports = __webpack_require__.p + \"b366904896f3eaead5d9.png\";\n\n
   \**************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"cb8eb20440af740c236d.png\";\n\n//# sourceURL=webpack://todo-list/./src/assets/icon-suitcase.png?");
+eval("module.exports = __webpack_require__.p + \"icons/cb8eb20440af740c236d.png\";\n\n//# sourceURL=webpack://todo-list/./src/assets/icon-suitcase.png?");
 
 /***/ }),
 
@@ -146,7 +196,7 @@ eval("module.exports = __webpack_require__.p + \"cb8eb20440af740c236d.png\";\n\n
   \*****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"a98b8d9c8add211a74ce.png\";\n\n//# sourceURL=webpack://todo-list/./src/assets/icon-travel-book.png?");
+eval("module.exports = __webpack_require__.p + \"icons/a98b8d9c8add211a74ce.png\";\n\n//# sourceURL=webpack://todo-list/./src/assets/icon-travel-book.png?");
 
 /***/ }),
 
@@ -156,7 +206,7 @@ eval("module.exports = __webpack_require__.p + \"a98b8d9c8add211a74ce.png\";\n\n
   \**************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"aac5441b3489e5051263.png\";\n\n//# sourceURL=webpack://todo-list/./src/assets/icon-traveler.png?");
+eval("module.exports = __webpack_require__.p + \"icons/aac5441b3489e5051263.png\";\n\n//# sourceURL=webpack://todo-list/./src/assets/icon-traveler.png?");
 
 /***/ }),
 
@@ -166,7 +216,7 @@ eval("module.exports = __webpack_require__.p + \"aac5441b3489e5051263.png\";\n\n
   \*******************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"3ea47a60dbac3815aaad.png\";\n\n//# sourceURL=webpack://todo-list/./src/assets/layers.png?");
+eval("module.exports = __webpack_require__.p + \"icons/3ea47a60dbac3815aaad.png\";\n\n//# sourceURL=webpack://todo-list/./src/assets/layers.png?");
 
 /***/ })
 
