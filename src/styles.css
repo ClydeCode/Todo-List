@@ -147,6 +147,12 @@ svg {
     align-self: center;
 }
 
+.button-x {
+    width: 12px;
+    height: 12px;   
+    margin-left: 25px;
+}
+
 button {
     height: 60px;
     width: 60px;
