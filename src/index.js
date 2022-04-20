@@ -4,6 +4,7 @@ import icon2 from './assets/icon-travel-book.png';
 import icon3 from './assets/icon-traveler.png';
 import icon4 from './assets/layers.png';
 import icon5 from './assets/icon-expand-arrow.png';
+import icon6 from './assets/x.png';
 import { initInbox } from './inbox';
 import { initToday } from './today';
 import { initUpcoming } from './upcoming';
