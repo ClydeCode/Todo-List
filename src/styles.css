@@ -144,6 +144,7 @@ body {
 
 svg {
     fill: rgba(255, 94, 0, .3);
+    align-self: center;
 }
 
 button {
