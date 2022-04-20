@@ -1,9 +1,9 @@
 import { rotateArrow } from "./DOM"
-import { hideList } from "./DOM";
+import { toggleList } from "./DOM";
 
 function expandProjects() {
     rotateArrow();
-    hideList();
+    toggleList();
 }
 
 export { expandProjects }

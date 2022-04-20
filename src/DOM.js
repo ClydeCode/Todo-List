@@ -64,7 +64,7 @@ function rotateArrow() {
     rotation += 180;
 }
 
-function hideList() {
+function toggleList() {
     if (document.querySelector('.projects-list').style.visibility === '' ||
         document.querySelector('.projects-list').style.visibility === 'visible')
             document.querySelector('.projects-list').style.visibility = 'hidden';
@@ -72,4 +72,4 @@ function hideList() {
         document.querySelector('.projects-list').style.visibility = 'visible';
 }
 
-export { setTitle, createList, setActive, rotateArrow, hideList };
+export { setTitle, createList, setActive, rotateArrow, toggleList };
