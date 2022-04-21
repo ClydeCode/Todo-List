@@ -1,11 +1,10 @@
-import { setTitle, setActive, rotateArrow, toggleList, createList, createProject } from './DOM'
+import { setTitle, setActive, rotateArrow, toggleList, createList } from './DOM'
 import { getItems } from './storage';
 
 function initInbox() {
     setActive('inbox');
     setTitle('Inbox');
     inboxContent();
-    createProject('xdd');
 }
 
 function initToday() {
