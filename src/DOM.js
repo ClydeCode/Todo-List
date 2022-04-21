@@ -72,4 +72,15 @@ function toggleList() {
         document.querySelector('.projects-list').style.visibility = 'visible';
 }
 
-export { setTitle, createList, setActive, rotateArrow, toggleList };
+function createProject(name) {
+    const lists = document.querySelector('.projects-list');
+    const list = document.createElement('div');
+    list.className = 'list';
+    list.innerHTML = name;
+
+    const lastChild = document.querySelector('.list.last');
+
+    lists.insertBefore(list, lastChild);
+}
+
+export { setTitle, createList, setActive, rotateArrow, toggleList, createProject };
