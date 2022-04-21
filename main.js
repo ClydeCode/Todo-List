@@ -120,53 +120,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/inbox.js":
-/*!**********************!*\
-  !*** ./src/inbox.js ***!
-  \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"initInbox\": () => (/* binding */ initInbox)\n/* harmony export */ });\n/* harmony import */ var _DOM__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DOM */ \"./src/DOM.js\");\n\r\n\r\nfunction initInbox() {\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.setActive)('inbox');\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.setTitle)('Inbox');\r\n}\r\n\r\n\n\n//# sourceURL=webpack://todo-list/./src/inbox.js?");
-
-/***/ }),
-
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _assets_icon_suitcase_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/icon-suitcase.png */ \"./src/assets/icon-suitcase.png\");\n/* harmony import */ var _assets_icon_travel_book_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/icon-travel-book.png */ \"./src/assets/icon-travel-book.png\");\n/* harmony import */ var _assets_icon_traveler_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/icon-traveler.png */ \"./src/assets/icon-traveler.png\");\n/* harmony import */ var _assets_layers_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/layers.png */ \"./src/assets/layers.png\");\n/* harmony import */ var _assets_icon_expand_arrow_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/icon-expand-arrow.png */ \"./src/assets/icon-expand-arrow.png\");\n/* harmony import */ var _assets_x_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./assets/x.png */ \"./src/assets/x.png\");\n/* harmony import */ var _inbox__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./inbox */ \"./src/inbox.js\");\n/* harmony import */ var _today__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./today */ \"./src/today.js\");\n/* harmony import */ var _upcoming__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./upcoming */ \"./src/upcoming.js\");\n/* harmony import */ var _projects__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./projects */ \"./src/projects.js\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nconst pages = document.querySelectorAll('.page');\r\n\r\n(0,_inbox__WEBPACK_IMPORTED_MODULE_7__.initInbox)();\r\n\r\npages.forEach(page => page.addEventListener('click', () => {\r\n    switch(page.id) {\r\n        case 'inbox':\r\n            (0,_inbox__WEBPACK_IMPORTED_MODULE_7__.initInbox)();\r\n            break;\r\n        case 'today':\r\n            (0,_today__WEBPACK_IMPORTED_MODULE_8__.initToday)();\r\n            break;\r\n        case 'upcoming':\r\n            (0,_upcoming__WEBPACK_IMPORTED_MODULE_9__.initUpcoming)();\r\n            break;\r\n        case 'projects':\r\n            (0,_projects__WEBPACK_IMPORTED_MODULE_10__.expandProjects)();\r\n            break;\r\n    };\r\n}));\n\n//# sourceURL=webpack://todo-list/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _assets_icon_suitcase_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/icon-suitcase.png */ \"./src/assets/icon-suitcase.png\");\n/* harmony import */ var _assets_icon_travel_book_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/icon-travel-book.png */ \"./src/assets/icon-travel-book.png\");\n/* harmony import */ var _assets_icon_traveler_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/icon-traveler.png */ \"./src/assets/icon-traveler.png\");\n/* harmony import */ var _assets_layers_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/layers.png */ \"./src/assets/layers.png\");\n/* harmony import */ var _assets_icon_expand_arrow_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/icon-expand-arrow.png */ \"./src/assets/icon-expand-arrow.png\");\n/* harmony import */ var _assets_x_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./assets/x.png */ \"./src/assets/x.png\");\n/* harmony import */ var _pages__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages */ \"./src/pages.js\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nconst pages = document.querySelectorAll('.page');\r\n\r\n(0,_pages__WEBPACK_IMPORTED_MODULE_7__.initInbox)();\r\n\r\npages.forEach(page => page.addEventListener('click', () => {\r\n    switch(page.id) {\r\n        case 'inbox':\r\n            (0,_pages__WEBPACK_IMPORTED_MODULE_7__.initInbox)();\r\n            break;\r\n        case 'today':\r\n            (0,_pages__WEBPACK_IMPORTED_MODULE_7__.initToday)();\r\n            break;\r\n        case 'upcoming':\r\n            (0,_pages__WEBPACK_IMPORTED_MODULE_7__.initUpcoming)();\r\n            break;\r\n        case 'projects':\r\n            (0,_pages__WEBPACK_IMPORTED_MODULE_7__.expandProjects)();\r\n            break;\r\n    };\r\n}));\n\n//# sourceURL=webpack://todo-list/./src/index.js?");
 
 /***/ }),
 
-/***/ "./src/projects.js":
-/*!*************************!*\
-  !*** ./src/projects.js ***!
-  \*************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"expandProjects\": () => (/* binding */ expandProjects)\n/* harmony export */ });\n/* harmony import */ var _DOM__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DOM */ \"./src/DOM.js\");\n\r\n\r\n\r\nfunction expandProjects() {\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.rotateArrow)();\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.toggleList)();\r\n}\r\n\r\n\n\n//# sourceURL=webpack://todo-list/./src/projects.js?");
-
-/***/ }),
-
-/***/ "./src/today.js":
+/***/ "./src/pages.js":
 /*!**********************!*\
-  !*** ./src/today.js ***!
+  !*** ./src/pages.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"initToday\": () => (/* binding */ initToday)\n/* harmony export */ });\n/* harmony import */ var _DOM__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DOM */ \"./src/DOM.js\");\n\r\n\r\nfunction initToday() {\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.setActive)('today');\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.setTitle)('Today');\r\n}\r\n\r\n\n\n//# sourceURL=webpack://todo-list/./src/today.js?");
-
-/***/ }),
-
-/***/ "./src/upcoming.js":
-/*!*************************!*\
-  !*** ./src/upcoming.js ***!
-  \*************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"initUpcoming\": () => (/* binding */ initUpcoming)\n/* harmony export */ });\n/* harmony import */ var _DOM__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DOM */ \"./src/DOM.js\");\n\r\n\r\nfunction initUpcoming() {\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.setActive)('upcoming');\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.setTitle)('Upcoming');\r\n}\r\n\r\n\n\n//# sourceURL=webpack://todo-list/./src/upcoming.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"expandProjects\": () => (/* binding */ expandProjects),\n/* harmony export */   \"initInbox\": () => (/* binding */ initInbox),\n/* harmony export */   \"initToday\": () => (/* binding */ initToday),\n/* harmony export */   \"initUpcoming\": () => (/* binding */ initUpcoming)\n/* harmony export */ });\n/* harmony import */ var _DOM__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DOM */ \"./src/DOM.js\");\n\r\n\r\nfunction initInbox() {\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.setActive)('inbox');\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.setTitle)('Inbox');\r\n}\r\n\r\nfunction initToday() {\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.setActive)('today');\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.setTitle)('Today');\r\n}\r\n\r\nfunction initUpcoming() {\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.setActive)('upcoming');\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.setTitle)('Upcoming');\r\n}\r\n\r\nfunction expandProjects() {\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.rotateArrow)();\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.toggleList)();\r\n}\r\n\r\n\n\n//# sourceURL=webpack://todo-list/./src/pages.js?");
 
 /***/ }),
 
