@@ -6,8 +6,11 @@ import icon4 from './assets/layers.png';
 import icon5 from './assets/icon-expand-arrow.png';
 import icon6 from './assets/x.png';
 import { initInbox, initToday, initUpcoming, expandProjects } from './pages'
+import { changeIndicatorColor } from './DOM';
+import { changePriority, priority } from './Todo';
 
 const pages = document.querySelectorAll('.page');
+const svgs = document.getElementsByTagName('svg');
 
 initInbox();
 
@@ -27,3 +30,5 @@ pages.forEach(page => page.addEventListener('click', () => {
             break;
     };
 }));
+
+Array.prototype.forEach.call(svgs, (svg) => svg.addEventListener('click', () => priority(svg.id)));
