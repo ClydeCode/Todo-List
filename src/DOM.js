@@ -1,4 +1,5 @@
 let rotation = 180;
+let svg_id = 0;
 
 function setTitle(name) {
     const title = document.querySelector('.title');
@@ -33,6 +34,7 @@ function createIndicator() {
     circle.setAttribute('cy', '9');  
     circle.setAttribute('r', '5');
     circle.setAttribute('stroke', 'black');
+    circle.id = `svg-${svg_id++}`
 
     svg.appendChild(circle);
 
