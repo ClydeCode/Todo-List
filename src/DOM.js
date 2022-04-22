@@ -29,12 +29,12 @@ function createIndicator() {
 
     svg.setAttribute('height', '18');
     svg.setAttribute('width', '18');
+    svg.id = `svg-${id++}`;
 
     circle.setAttribute('cx', '9');
     circle.setAttribute('cy', '9');  
     circle.setAttribute('r', '5');
     circle.setAttribute('stroke', 'black');
-    circle.id = `svg-${svg_id++}`
 
     svg.appendChild(circle);
 
@@ -89,5 +89,10 @@ function wipeContent() {
     const tabs = document.querySelector('.tabs');
     tabs.innerHTML = '';
 }
+
+// function changeIndicatorColor(id) {
+//     const svg = document.querySelector(`#svg-${id}`);
+//     svg.setAttribute('fill', '#FFFFFF');
+// }
 
 export { setTitle, createList, setActive, rotateArrow, toggleList, createProject, wipeContent };
