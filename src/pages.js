@@ -1,5 +1,5 @@
 import { setTitle, setActive, rotateArrow, toggleList, wipeContent } from './DOM'
-import { inboxContent, todayContent } from './Todo'
+import { inboxContent, todayContent, upcomingContent } from './Todo'
 
 function initInbox() {
     wipeContent();
@@ -19,6 +19,7 @@ function initUpcoming() {
     wipeContent();
     setActive('upcoming');
     setTitle('Upcoming');
+    upcomingContent();
 }
 
 function expandProjects() {
