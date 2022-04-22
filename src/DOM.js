@@ -83,4 +83,9 @@ function createProject(name) {
     lists.insertBefore(list, lastChild);
 }
 
-export { setTitle, createList, setActive, rotateArrow, toggleList, createProject };
+function wipeContent() {
+    const tabs = document.querySelector('.tabs');
+    tabs.innerHTML = '';
+}
+
+export { setTitle, createList, setActive, rotateArrow, toggleList, createProject, wipeContent };
