@@ -1,16 +1,26 @@
 import { createList } from './DOM';
 import { getItems } from './storage';
-import { compareAsc } from 'date-fns';
+import { compareAsc, startOfDay, isToday } from 'date-fns';
 
 const array = getItems();
 
 function inboxContent() {
     let arr = sortArray(array);
-    arr.forEach(item => createList(item.title, item.date));
+    create(arr);
+}
+
+function todayContent() {
+    let arr = sortArray(array);
+    arr = arr.filter(item => isToday(new Date(item.date)));
+    create(arr);
 }
 
 function sortArray(array) {
     return array.sort((a, b) => compareAsc(new Date(a.date), new Date(b.date)));
 }
 
-export { inboxContent }
+function create(arr) {
+    arr.forEach(item => createList(item.title, item.date));
+}
+
+export { inboxContent, todayContent }
