@@ -120,6 +120,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/Todo.js":
+/*!*********************!*\
+  !*** ./src/Todo.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"inboxContent\": () => (/* binding */ inboxContent)\n/* harmony export */ });\n/* harmony import */ var _storage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./storage */ \"./src/storage.js\");\n\r\n\r\nfunction inboxContent() {\r\n    const arr = (0,_storage__WEBPACK_IMPORTED_MODULE_0__.getItems)();\r\n    arr.forEach(item => createList(item.title, item.date));\r\n}\r\n\r\n\n\n//# sourceURL=webpack://todo-list/./src/Todo.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -136,7 +146,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"expandProjects\": () => (/* binding */ expandProjects),\n/* harmony export */   \"initInbox\": () => (/* binding */ initInbox),\n/* harmony export */   \"initToday\": () => (/* binding */ initToday),\n/* harmony export */   \"initUpcoming\": () => (/* binding */ initUpcoming)\n/* harmony export */ });\n/* harmony import */ var _DOM__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DOM */ \"./src/DOM.js\");\n/* harmony import */ var _storage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./storage */ \"./src/storage.js\");\n\r\n\r\n\r\nfunction initInbox() {\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.setActive)('inbox');\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.setTitle)('Inbox');\r\n    inboxContent();\r\n}\r\n\r\nfunction initToday() {\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.setActive)('today');\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.setTitle)('Today');\r\n}\r\n\r\nfunction initUpcoming() {\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.setActive)('upcoming');\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.setTitle)('Upcoming');\r\n}\r\n\r\nfunction expandProjects() {\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.rotateArrow)();\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.toggleList)();\r\n}\r\n\r\nfunction inboxContent() {\r\n    const arr = (0,_storage__WEBPACK_IMPORTED_MODULE_1__.getItems)();\r\n    arr.forEach(item => (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.createList)(item.title, item.date));\r\n}\r\n\r\n\n\n//# sourceURL=webpack://todo-list/./src/pages.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"expandProjects\": () => (/* binding */ expandProjects),\n/* harmony export */   \"initInbox\": () => (/* binding */ initInbox),\n/* harmony export */   \"initToday\": () => (/* binding */ initToday),\n/* harmony export */   \"initUpcoming\": () => (/* binding */ initUpcoming)\n/* harmony export */ });\n/* harmony import */ var _DOM__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DOM */ \"./src/DOM.js\");\n/* harmony import */ var _Todo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Todo */ \"./src/Todo.js\");\n\r\n\r\n\r\nfunction initInbox() {\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.setActive)('inbox');\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.setTitle)('Inbox');\r\n    (0,_Todo__WEBPACK_IMPORTED_MODULE_1__.inboxContent)();\r\n}\r\n\r\nfunction initToday() {\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.setActive)('today');\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.setTitle)('Today');\r\n}\r\n\r\nfunction initUpcoming() {\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.setActive)('upcoming');\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.setTitle)('Upcoming');\r\n}\r\n\r\nfunction expandProjects() {\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.rotateArrow)();\r\n    (0,_DOM__WEBPACK_IMPORTED_MODULE_0__.toggleList)();\r\n}\r\n\r\n\n\n//# sourceURL=webpack://todo-list/./src/pages.js?");
 
 /***/ }),
 

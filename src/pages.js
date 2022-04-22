@@ -1,5 +1,5 @@
-import { setTitle, setActive, rotateArrow, toggleList, createList } from './DOM'
-import { getItems } from './storage';
+import { setTitle, setActive, rotateArrow, toggleList } from './DOM'
+import { inboxContent } from './Todo'
 
 function initInbox() {
     setActive('inbox');
@@ -20,11 +20,6 @@ function initUpcoming() {
 function expandProjects() {
     rotateArrow();
     toggleList();
-}
-
-function inboxContent() {
-    const arr = getItems();
-    arr.forEach(item => createList(item.title, item.date));
 }
 
 export { initInbox, initToday, initUpcoming, expandProjects }
