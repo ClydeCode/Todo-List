@@ -43,8 +43,6 @@ function setPriority(id) {
     }
     
     changeIndicatorColor(id);
-
-    console.log(array)
 }
 
 export { inboxContent, todayContent, upcomingContent, setPriority }
