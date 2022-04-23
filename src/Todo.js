@@ -10,7 +10,6 @@ function inboxContent() {
 function todayContent() {
     let arr = sortArray(getArray());
     arr = arr.filter(item => isToday(new Date(item.date)));
-    console.log(arr)
     create(arr);
 }
 
