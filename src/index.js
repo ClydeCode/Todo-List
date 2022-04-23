@@ -6,7 +6,7 @@ import icon4 from './assets/layers.png';
 import icon5 from './assets/icon-expand-arrow.png';
 import icon6 from './assets/x.png';
 import { initInbox, initToday, initUpcoming, expandProjects } from './pages'
-import { setPriority } from './Todo';
+import { changePriority } from './Todo';
 
 const pages = document.querySelectorAll('.page');
 const svgs = document.getElementsByTagName('svg');
@@ -35,5 +35,5 @@ pages.forEach(page => page.addEventListener('click', () => {
 }));
 
 function addEventListenersToSVG() {
-    Array.prototype.forEach.call(svgs, (svg) => svg.addEventListener('click', () => setPriority(svg.id)));
+    Array.prototype.forEach.call(svgs, (svg) => svg.addEventListener('click', () => changePriority(svg.id)));
 }

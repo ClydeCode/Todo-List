@@ -1,5 +1,5 @@
 import { createList, changeIndicatorColor } from './DOM';
-import { getItems, changePriority, showPriority } from './storage';
+import { getItems, setPriority, showPriority } from './storage';
 import { compareAsc, isToday, isThisWeek } from 'date-fns';
 
 function inboxContent() {
@@ -25,26 +25,31 @@ function sortArray(array) {
 
 function create(arr) {
     arr.forEach(item => createList(item.title, item.date));
+    // setPriorities(arr);
 }
+
+// function setPriorities(array) {
+//     for (let index = 0; index < array.length; index++) changeIndicatorColor(`svg-${index}`);
+// }
 
 function getArray() {
     return getItems();
 }
 
-function setPriority(id) {
+function changePriority(id) {
     let goodId = id.split('-');
     const _id = goodId[1];
 
     let priority = showPriority(_id);
 
     if (priority < 2) {
-        changePriority(_id, ++priority)
+        setPriority(_id, ++priority)
     }
     else {
-        changePriority(_id, 0);
+        setPriority(_id, 0);
     }
     
     changeIndicatorColor(id);
 }
 
-export { inboxContent, todayContent, upcomingContent, setPriority }
+export { inboxContent, todayContent, upcomingContent, changePriority }

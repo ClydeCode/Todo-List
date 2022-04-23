@@ -42,7 +42,7 @@ function removeItem(index) {
     array.splice(index, 1);
 }
 
-function changePriority(index, number) {
+function setPriority(index, number) {
     array[index].priority = number;
 }
 
@@ -54,4 +54,4 @@ function getItems() {
     return array;
 }
 
-export { addItem, removeItem, getItems, changePriority, showPriority }
+export { addItem, removeItem, getItems, setPriority, showPriority }
