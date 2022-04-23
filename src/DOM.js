@@ -1,7 +1,6 @@
 import { showPriority } from "./storage";
 
 let rotation = 180;
-let svg_id = 0;
 
 const WHITE = '#ffffff';
 const GREEN = '#43f071';
@@ -12,7 +11,7 @@ function setTitle(name) {
     title.innerHTML = name;
 }
 
-function createList(name, date) {
+function createList(name, date, id) {
     const tabs = document.querySelector('.tabs');
 
     const div = document.createElement('div');
@@ -24,18 +23,18 @@ function createList(name, date) {
     divDate.innerHTML = date;
 
     tabs.appendChild(div);
-    div.insertBefore(createIndicator(), div.firstChild);
+    div.insertBefore(createIndicator(id), div.firstChild);
     divDate.appendChild(createDeleteBtn());
     div.appendChild(divDate);
 }
 
-function createIndicator() {
+function createIndicator(id) {
     const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
     const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
 
     svg.setAttribute('height', '18');
     svg.setAttribute('width', '18');
-    svg.id = `svg-${svg_id++}`;
+    svg.id = `svg-${id}`;
 
     circle.setAttribute('cx', '9');
     circle.setAttribute('cy', '9');  

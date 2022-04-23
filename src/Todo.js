@@ -24,7 +24,7 @@ function sortArray(array) {
 }
 
 function create(arr) {
-    arr.forEach(item => createList(item.title, item.date));
+    arr.forEach(item => createList(item.title, item.date, item.id));
     // setPriorities(arr);
 }
 
