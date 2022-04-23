@@ -2,21 +2,19 @@ import { createList, changeIndicatorColor } from './DOM';
 import { getItems, changePriority, showPriority } from './storage';
 import { compareAsc, isToday, isThisWeek } from 'date-fns';
 
-const array = getItems();
-
 function inboxContent() {
-    let arr = sortArray(array);
+    let arr = sortArray(getArray());
     create(arr);
 }
 
 function todayContent() {
-    let arr = sortArray(array);
+    let arr = sortArray(getArray());
     arr = arr.filter(item => isToday(new Date(item.date)));
     create(arr);
 }
 
 function upcomingContent() {
-    let arr = sortArray(array);
+    let arr = sortArray(getArray());
     arr = arr.filter(item => isThisWeek(new Date(item.date)));
     create(arr);
 }
@@ -27,6 +25,10 @@ function sortArray(array) {
 
 function create(arr) {
     arr.forEach(item => createList(item.title, item.date));
+}
+
+function getArray() {
+    return getItems();
 }
 
 function setPriority(id) {
