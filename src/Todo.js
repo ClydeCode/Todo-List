@@ -10,6 +10,7 @@ function inboxContent() {
 function todayContent() {
     let arr = sortArray(getArray());
     arr = arr.filter(item => isToday(new Date(item.date)));
+    console.log(arr)
     create(arr);
 }
 
@@ -25,12 +26,12 @@ function sortArray(array) {
 
 function create(arr) {
     arr.forEach(item => createList(item.title, item.date, item.id));
-    // setPriorities(arr);
+    setPriorities(arr);
 }
 
-// function setPriorities(array) {
-//     for (let index = 0; index < array.length; index++) changeIndicatorColor(`svg-${index}`);
-// }
+function setPriorities(array) {
+    array.forEach(item => changeIndicatorColor(`svg-${item.id}`));
+}
 
 function getArray() {
     return getItems();
