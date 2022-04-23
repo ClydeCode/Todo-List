@@ -1,5 +1,11 @@
+import { showPriority } from "./storage";
+
 let rotation = 180;
 let svg_id = 0;
+
+const WHITE = '#ffffff';
+const GREEN = '#43f071';
+const BLUE = '#007bff';
 
 function setTitle(name) {
     const title = document.querySelector('.title');
@@ -29,7 +35,7 @@ function createIndicator() {
 
     svg.setAttribute('height', '18');
     svg.setAttribute('width', '18');
-    svg.id = `svg-${id++}`;
+    svg.id = `svg-${svg_id++}`;
 
     circle.setAttribute('cx', '9');
     circle.setAttribute('cy', '9');  
@@ -90,9 +96,14 @@ function wipeContent() {
     tabs.innerHTML = '';
 }
 
-// function changeIndicatorColor(id) {
-//     const svg = document.querySelector(`#svg-${id}`);
-//     svg.setAttribute('fill', '#FFFFFF');
-// }
+function changeIndicatorColor(id) {
+    const svg = document.querySelector(`#${id}`);
+    const goodId = id.split('-');
+    const _id = goodId[1];
 
-export { setTitle, createList, setActive, rotateArrow, toggleList, createProject, wipeContent };
+    if (showPriority(_id) === 0) svg.style.fill = WHITE;
+    if (showPriority(_id) === 1) svg.style.fill = GREEN;
+    if (showPriority(_id) === 2) svg.style.fill = BLUE;
+}
+
+export { setTitle, createList, setActive, rotateArrow, toggleList, createProject, wipeContent, changeIndicatorColor };

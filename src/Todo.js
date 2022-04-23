@@ -1,5 +1,5 @@
-import { createList } from './DOM';
-import { getItems } from './storage';
+import { createList, changeIndicatorColor } from './DOM';
+import { getItems, changePriority, showPriority } from './storage';
 import { compareAsc, isToday, isThisWeek } from 'date-fns';
 
 const array = getItems();
@@ -29,4 +29,22 @@ function create(arr) {
     arr.forEach(item => createList(item.title, item.date));
 }
 
-export { inboxContent, todayContent, upcomingContent }
+function setPriority(id) {
+    let goodId = id.split('-');
+    const _id = goodId[1];
+
+    let priority = showPriority(_id);
+
+    if (priority < 2) {
+        changePriority(_id, ++priority)
+    }
+    else {
+        changePriority(_id, 0);
+    }
+    
+    changeIndicatorColor(id);
+
+    console.log(array)
+}
+
+export { inboxContent, todayContent, upcomingContent, setPriority }
