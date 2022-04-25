@@ -24,7 +24,7 @@ function createList(name, date, id) {
 
     tabs.appendChild(div);
     div.insertBefore(createIndicator(id), div.firstChild);
-    divDate.appendChild(createDeleteBtn());
+    divDate.appendChild(createDeleteBtn(id));
     div.appendChild(divDate);
 }
 
@@ -46,10 +46,11 @@ function createIndicator(id) {
     return svg;
 };
 
-function createDeleteBtn() {
+function createDeleteBtn(id) {
     const img = document.createElement('img');
     img.src = './icons/9fc7b42bf4ed81bf00dd.png'
     img.className = 'button-x';
+    img.id = id;
 
     return img;
 }
