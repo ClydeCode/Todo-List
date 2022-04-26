@@ -1,4 +1,4 @@
-import { createList, changeIndicatorColor } from './DOM';
+import { createList, changeIndicatorColor, wipeContent } from './DOM';
 import { getItems, setPriority, showPriority } from './storage';
 import { compareAsc, isToday, isThisWeek } from 'date-fns';
 
@@ -28,6 +28,24 @@ function create(arr) {
     setPriorities(arr);
 }
 
+function refresh() {
+    const currentPlace = document.querySelector('.title');
+
+    wipeContent();
+
+    switch(currentPlace.innerHTML) {
+        case 'inbox':
+            inboxContent();
+            break;
+        case 'today':
+            todayContent();
+            break;
+        case 'upcoming':
+            upcomingContent();
+            break;
+    }
+}
+
 function setPriorities(array) {
     array.forEach(item => changeIndicatorColor(`svg-${item.id}`));
 }
@@ -52,4 +70,4 @@ function changePriority(id) {
     changeIndicatorColor(id);
 }
 
-export { inboxContent, todayContent, upcomingContent, changePriority }
+export { inboxContent, todayContent, upcomingContent, changePriority, refresh }
