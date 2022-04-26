@@ -9,7 +9,6 @@ import { initInbox, initToday, initUpcoming, expandProjects } from './pages'
 import { changePriority, deleteTodo, refresh } from './Todo';
 
 const pages = document.querySelectorAll('.page');
-const svgs = document.getElementsByTagName('svg');
 
 initInbox();
 
