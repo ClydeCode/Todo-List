@@ -12,21 +12,21 @@ const pages = document.querySelectorAll('.page');
 const svgs = document.getElementsByTagName('svg');
 
 initInbox();
-addEventListenersToSVG();
+// addEventListenersToSVG();
 
 pages.forEach(page => page.addEventListener('click', () => {
     switch(page.id) {
         case 'inbox':
             initInbox();
-            addEventListenersToSVG();
+            // addEventListenersToSVG();
             break;
         case 'today':
             initToday();
-            addEventListenersToSVG();
+            // addEventListenersToSVG();
             break;
         case 'upcoming':
             initUpcoming();
-            addEventListenersToSVG();
+            // addEventListenersToSVG();
             break;
         case 'projects':
             expandProjects();
@@ -34,13 +34,20 @@ pages.forEach(page => page.addEventListener('click', () => {
     };
 }));
 
-function addEventListenersToSVG() {
-    Array.prototype.forEach.call(svgs, (svg) => svg.addEventListener('click', () => changePriority(svg.id)));
-}
+// function addEventListenersToSVG() {
+//     Array.prototype.forEach.call(svgs, (svg) => svg.addEventListener('click', () => {
+//         changePriority(svg.id)
+//         console.log(svg)
+//     }));
+// }
 
 document.addEventListener('click', (e) => {
     if (e.target.className === 'button-x') {
         deleteTodo(e.target.id);
         refresh();
     }
+    
+    if (e.target.tagName === 'svg') changePriority(e.target.id);
+
+    if (e.target.parentNode.tagName === 'svg') changePriority(e.target.parentNode.id);
 });
