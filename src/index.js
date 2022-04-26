@@ -5,7 +5,7 @@ import icon3 from './assets/icon-traveler.png';
 import icon4 from './assets/layers.png';
 import icon5 from './assets/icon-expand-arrow.png';
 import icon6 from './assets/x.png';
-import { initInbox, initToday, initUpcoming, expandProjects, initProjects } from './pages'
+import { initInbox, initToday, initUpcoming, expandProjects, initProjects, loadProject } from './pages'
 import { changePriority, deleteTodo, refresh } from './Todo';
 
 const pages = document.querySelectorAll('.page');
@@ -39,4 +39,6 @@ document.addEventListener('click', (e) => {
     if (e.target.tagName === 'svg') changePriority(e.target.id);
 
     if (e.target.parentNode.tagName === 'svg') changePriority(e.target.parentNode.id);
+
+    if (e.target.className === 'list') loadProject(e.target.innerHTML);
 });
