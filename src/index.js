@@ -6,7 +6,7 @@ import icon4 from './assets/layers.png';
 import icon5 from './assets/icon-expand-arrow.png';
 import icon6 from './assets/x.png';
 import { initInbox, initToday, initUpcoming, expandProjects } from './pages'
-import { changePriority } from './Todo';
+import { changePriority, deleteTodo, refresh } from './Todo';
 
 const pages = document.querySelectorAll('.page');
 const svgs = document.getElementsByTagName('svg');
@@ -37,3 +37,10 @@ pages.forEach(page => page.addEventListener('click', () => {
 function addEventListenersToSVG() {
     Array.prototype.forEach.call(svgs, (svg) => svg.addEventListener('click', () => changePriority(svg.id)));
 }
+
+document.addEventListener('click', (e) => {
+    if (e.target.className === 'button-x') {
+        deleteTodo(e.target.id);
+        refresh();
+    }
+});
