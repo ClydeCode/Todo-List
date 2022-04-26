@@ -1,4 +1,7 @@
 let todos = [];
+let projects = [];
+
+projects[0] = {name : 'Homework'}
 
 todos[0] = {
     id : 0,
@@ -64,4 +67,8 @@ function getItems() {
     return todos;
 }
 
-export { addItem, removeItem, getItems, setPriority, showPriority }
+function getProjects() {
+    return projects;
+}
+
+export { addItem, removeItem, getItems, setPriority, showPriority, getProjects }
