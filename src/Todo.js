@@ -1,5 +1,5 @@
 import { createList, changeIndicatorColor, wipeContent } from './DOM';
-import { getItems, setPriority, showPriority } from './storage';
+import { getItems, removeItem, setPriority, showPriority } from './storage';
 import { compareAsc, isToday, isThisWeek } from 'date-fns';
 
 function inboxContent() {
@@ -26,6 +26,10 @@ function sortArray(array) {
 function create(arr) {
     arr.forEach(item => createList(item.title, item.date, item.id));
     setPriorities(arr);
+}
+
+function deleteTodo(id) {
+    removeItem(id);
 }
 
 function refresh() {
@@ -70,4 +74,4 @@ function changePriority(id) {
     changeIndicatorColor(id);
 }
 
-export { inboxContent, todayContent, upcomingContent, changePriority, refresh }
+export { inboxContent, todayContent, upcomingContent, changePriority, refresh, deleteTodo }
