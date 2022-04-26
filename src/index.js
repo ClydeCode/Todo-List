@@ -5,12 +5,13 @@ import icon3 from './assets/icon-traveler.png';
 import icon4 from './assets/layers.png';
 import icon5 from './assets/icon-expand-arrow.png';
 import icon6 from './assets/x.png';
-import { initInbox, initToday, initUpcoming, expandProjects } from './pages'
+import { initInbox, initToday, initUpcoming, expandProjects, initProjects } from './pages'
 import { changePriority, deleteTodo, refresh } from './Todo';
 
 const pages = document.querySelectorAll('.page');
 
 initInbox();
+initProjects();
 
 pages.forEach(page => page.addEventListener('click', () => {
     switch(page.id) {
