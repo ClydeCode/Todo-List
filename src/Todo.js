@@ -1,5 +1,5 @@
-import { createList, changeIndicatorColor, wipeContent } from './DOM';
-import { getItems, removeItem, setPriority, showPriority } from './storage';
+import { createList, changeIndicatorColor, wipeContent, createProject } from './DOM';
+import { getItems, getProjects, removeItem, setPriority, showPriority } from './storage';
 import { compareAsc, isToday, isThisWeek } from 'date-fns';
 
 function inboxContent() {
@@ -17,6 +17,12 @@ function upcomingContent() {
     let arr = sortArray(getArray());
     arr = arr.filter(item => isThisWeek(new Date(item.date)));
     create(arr);
+}
+
+function loadProjects() {
+    const projects = getProjects();
+
+    projects.forEach(project => createProject(project.name));
 }
 
 function sortArray(array) {
@@ -74,4 +80,4 @@ function changePriority(id) {
     changeIndicatorColor(id);
 }
 
-export { inboxContent, todayContent, upcomingContent, changePriority, refresh, deleteTodo }
+export { inboxContent, todayContent, upcomingContent, changePriority, refresh, deleteTodo, loadProjects }
