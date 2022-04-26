@@ -12,34 +12,23 @@ const pages = document.querySelectorAll('.page');
 const svgs = document.getElementsByTagName('svg');
 
 initInbox();
-// addEventListenersToSVG();
 
 pages.forEach(page => page.addEventListener('click', () => {
     switch(page.id) {
         case 'inbox':
             initInbox();
-            // addEventListenersToSVG();
             break;
         case 'today':
             initToday();
-            // addEventListenersToSVG();
             break;
         case 'upcoming':
             initUpcoming();
-            // addEventListenersToSVG();
             break;
         case 'projects':
             expandProjects();
             break;
     };
 }));
-
-// function addEventListenersToSVG() {
-//     Array.prototype.forEach.call(svgs, (svg) => svg.addEventListener('click', () => {
-//         changePriority(svg.id)
-//         console.log(svg)
-//     }));
-// }
 
 document.addEventListener('click', (e) => {
     if (e.target.className === 'button-x') {
