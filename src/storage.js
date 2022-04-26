@@ -31,12 +31,13 @@ todos[3] = {
     priority: 0
 }
 
-function addItem(title, date) {
+function addItem(title, date, project = false) {
     const item = {
         id : todos.length,
         title, 
         date,
-        priority : 0
+        priority : 0,
+        project
     };
     todos.push(item);
 }
