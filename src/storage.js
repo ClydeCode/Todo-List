@@ -38,16 +38,26 @@ function addItem(title, date) {
     array.push(item);
 }
 
-function removeItem(index) {
-    array.splice(index, 1);
+function removeItem(id) {
+    array.forEach((item, index) => {
+        if (item.id == id) {
+            array.splice(index, 1);
+        }
+    }); 
 }
 
-function setPriority(index, number) {
-    array[index].priority = number;
+function setPriority(id, number) {
+    array.forEach(item => {
+        if (item.id == id) item.priority = number;
+    });
 }
 
-function showPriority(index) {
-    return array[index].priority;
+function showPriority(id) {
+    let priority;
+    array.forEach(item => {
+        if (item.id == id) priority = item.priority;
+    });
+    return priority;
 }
 
 function getItems() {
