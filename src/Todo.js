@@ -19,6 +19,12 @@ function upcomingContent() {
     create(arr);
 }
 
+function projectContent(name) {
+    let arr = sortArray(getArray());
+    arr = arr.filter(item => item.project === name)
+    create(arr);
+}
+
 function loadProjects() {
     const projects = getProjects();
 
@@ -80,4 +86,4 @@ function changePriority(id) {
     changeIndicatorColor(id);
 }
 
-export { inboxContent, todayContent, upcomingContent, changePriority, refresh, deleteTodo, loadProjects }
+export { inboxContent, todayContent, upcomingContent, changePriority, refresh, deleteTodo, loadProjects, projectContent }
