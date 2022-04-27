@@ -42,6 +42,11 @@ function addItem(title, date, project = false) {
     todos.push(item);
 }
 
+function addProject(title) {
+    const project = {id : projects.length, title};
+    projects.push(project);
+}
+
 function removeItem(id) {
     todos.forEach((item, index) => {
         if (item.id == id) {
@@ -72,4 +77,4 @@ function getProjects() {
     return projects;
 }
 
-export { addItem, removeItem, getItems, setPriority, showPriority, getProjects }
+export { addItem, addProject, removeItem, getItems, setPriority, showPriority, getProjects }
