@@ -49,10 +49,14 @@ function addProject(title) {
 
 function removeItem(id) {
     todos.forEach((item, index) => {
-        if (item.id == id) {
-            todos.splice(index, 1);
-        }
+        if (item.id == id) todos.splice(index, 1);
     }); 
+}
+
+function removeProject(id) {
+    projects.forEach((project, index) => {
+        if (project.id == id) project.splice(index, 1);
+    });
 }
 
 function setPriority(id, number) {
@@ -77,4 +81,4 @@ function getProjects() {
     return projects;
 }
 
-export { addItem, addProject, removeItem, getItems, setPriority, showPriority, getProjects }
+export { addItem, addProject, removeItem, removeProject, getItems, setPriority, showPriority, getProjects }
