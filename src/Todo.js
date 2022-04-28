@@ -1,6 +1,6 @@
 import { createList, changeIndicatorColor, wipeContent, createProject, cleanList } from './DOM';
 import { getItems, getProjects, removeItem, removeProject, setPriority, showPriority } from './storage';
-import { compareAsc, isToday, isThisWeek, compareDesc } from 'date-fns';
+import { compareAsc, isToday, isThisWeek } from 'date-fns';
 
 function inboxContent() {
     let arr = sortArray(getArray());
@@ -34,7 +34,7 @@ function loadProjects() {
 }
 
 function sortArray(array) {
-    let arr = array.sort((a, b) => new Date(a.date) - new Date(b.date) ? -1 : 1);
+    let arr = array.sort((a, b) => compareAsc(new Date(a.date), new Date(b.date)));
     
     return arr.sort((a, b) => a.priority < b.priority ? 1 : -1);
 }
