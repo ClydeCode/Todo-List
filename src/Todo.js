@@ -29,8 +29,8 @@ function loadProjects() {
     const projects = getProjects();
 
     cleanList();
-
-    projects.forEach(project => createProject(project.name, project.id));
+    console.log(projects)
+    projects.forEach(project => createProject(project.title, project.id));
 }
 
 function sortArray(array) {
