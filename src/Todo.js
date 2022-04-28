@@ -57,7 +57,7 @@ function refresh() {
 
     wipeContent();
 
-    switch(currentPlace.innerHTML) {
+    switch(currentPlace.textContent) {
         case 'inbox':
             inboxContent();
             break;
