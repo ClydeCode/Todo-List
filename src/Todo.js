@@ -29,12 +29,14 @@ function loadProjects() {
     const projects = getProjects();
 
     cleanList();
-    
+
     projects.forEach(project => createProject(project.title, project.id));
 }
 
 function sortArray(array) {
-    return array.sort((a, b) => compareAsc(new Date(a.date), new Date(b.date)));
+    let arr = array.sort((a, b) => compareAsc(new Date(a.date), new Date(b.date)));
+    
+    return arr.sort((a, b) => a.priority < b.priority);
 }
 
 function create(arr) {
