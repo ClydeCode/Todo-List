@@ -1,34 +1,14 @@
 let todos = [];
 let projects = [];
 
-projects[0] = {name : 'Homework', id : 0}
+if (localStorage.length > 0) {
+    if (localStorage.getItem('projects'))
+        projects = JSON.parse(localStorage.getItem('projects'));
+    console.log(projects)
 
-todos[0] = {
-    id : 0,
-    title : 'pav',
-    date : '2022/01/03',
-    priority: 0
-}
-
-todos[1] = {
-    id : 1,
-    title : 'pavss',
-    date : '2022/04/22',
-    priority: 0
-}
-
-todos[2] = {
-    id : 2,
-    title : 'pavssss',
-    date : '2022/04/23',
-    priority: 0
-}
-
-todos[3] = {
-    id : 3,
-    title : 'pavsssss',
-    date : '2022/04/24',
-    priority: 0
+    if (localStorage.getItem('todos'))
+        todos = JSON.parse(localStorage.getItem('todos'));
+    console.log(todos)
 }
 
 function addItem(title, date, project = false) {
@@ -40,29 +20,34 @@ function addItem(title, date, project = false) {
         project
     };
     todos.push(item);
+    saveArrayToStorage('todos');
 }
 
 function addProject(title) {
     const project = {id : projects.length, title};
     projects.push(project);
+    saveArrayToStorage('projects');
 }
 
 function removeItem(id) {
     todos.forEach((item, index) => {
         if (item.id == id) todos.splice(index, 1);
     }); 
+    saveArrayToStorage('todos');
 }
 
 function removeProject(id) {
     projects.forEach((project, index) => {
         if (project.id == id) projects.splice(index, 1);
     });
+    saveArrayToStorage('projects');
 }
 
 function setPriority(id, number) {
     todos.forEach(item => {
         if (item.id == id) item.priority = number;
     });
+    saveArrayToStorage('todos');
 }
 
 function showPriority(id) {
@@ -71,6 +56,11 @@ function showPriority(id) {
         if (item.id == id) priority = item.priority;
     });
     return priority;
+}
+
+function saveArrayToStorage(name) {
+    if (name === 'todos') localStorage.setItem('todos', JSON.stringify(todos));
+    if (name === 'projects') localStorage.setItem('projects', JSON.stringify(projects));
 }
 
 function getItems() {
