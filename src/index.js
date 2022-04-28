@@ -36,9 +36,15 @@ document.addEventListener('click', (e) => {
         refresh();
     }
     
-    if (e.target.tagName === 'svg') changePriority(e.target.id);
+    if (e.target.tagName === 'svg') {
+        changePriority(e.target.id);
+        refresh();
+    };
 
-    if (e.target.parentNode.tagName === 'svg') changePriority(e.target.parentNode.id);
+    if (e.target.parentNode.tagName === 'svg') {
+        changePriority(e.target.parentNode.id);
+        refresh();
+    };
 
     if (e.target.className === 'list') loadProject(e.target.textContent);
 
