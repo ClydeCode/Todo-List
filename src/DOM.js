@@ -98,6 +98,12 @@ function createProject(name, id) {
     lists.insertBefore(list, lastChild);
 }
 
+function cleanList() {
+    const lists = document.querySelector('.projects-list');
+
+    lists.innerHTML = '';
+}
+
 function wipeContent() {
     const tabs = document.querySelector('.tabs');
     tabs.innerHTML = '';
@@ -113,4 +119,4 @@ function changeIndicatorColor(id) {
     if (showPriority(_id) === 2) svg.style.fill = BLUE;
 }
 
-export { setTitle, createList, setActive, rotateArrow, toggleList, createProject, wipeContent, changeIndicatorColor };
+export { setTitle, createList, setActive, rotateArrow, toggleList, createProject, wipeContent, changeIndicatorColor, cleanList };
