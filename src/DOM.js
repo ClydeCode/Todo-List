@@ -101,7 +101,13 @@ function createProject(name, id) {
 function cleanList() {
     const lists = document.querySelector('.projects-list');
 
+    const lastList = document.createElement('div');
+    lastList.className = 'list last';
+    lastList.innerText = '+ New Project'
+
     lists.innerHTML = '';
+
+    lists.appendChild(lastList);
 }
 
 function wipeContent() {
