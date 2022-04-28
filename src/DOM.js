@@ -80,13 +80,20 @@ function toggleList() {
         document.querySelector('.projects-list').style.visibility = 'visible';
 }
 
-function createProject(name) {
+function createProject(name, id) {
     const lists = document.querySelector('.projects-list');
     const list = document.createElement('div');
     list.className = 'list';
     list.innerHTML = name;
 
+    const img = document.createElement('img');
+    img.src = './icons/9fc7b42bf4ed81bf00dd.png';
+    img.className = 'list-delete-button';
+    img.id = id;
+
     const lastChild = document.querySelector('.list.last');
+
+    list.appendChild(img);
 
     lists.insertBefore(list, lastChild);
 }
