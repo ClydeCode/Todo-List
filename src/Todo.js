@@ -29,7 +29,7 @@ function loadProjects() {
     const projects = getProjects();
 
     cleanList();
-    console.log(projects)
+    
     projects.forEach(project => createProject(project.title, project.id));
 }
 
