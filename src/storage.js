@@ -1,7 +1,7 @@
 let todos = [];
 let projects = [];
 
-projects[0] = {name : 'Homework'}
+projects[0] = {name : 'Homework', id : 0}
 
 todos[0] = {
     id : 0,
@@ -55,7 +55,7 @@ function removeItem(id) {
 
 function removeProject(id) {
     projects.forEach((project, index) => {
-        if (project.id == id) project.splice(index, 1);
+        if (project.id == id) projects.splice(index, 1);
     });
 }
 
