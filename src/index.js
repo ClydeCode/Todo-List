@@ -40,5 +40,5 @@ document.addEventListener('click', (e) => {
 
     if (e.target.parentNode.tagName === 'svg') changePriority(e.target.parentNode.id);
 
-    if (e.target.className === 'list') loadProject(e.target.innerHTML);
+    if (e.target.className === 'list') loadProject(e.target.textContent);
 });
