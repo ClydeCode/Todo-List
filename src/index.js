@@ -6,7 +6,7 @@ import icon4 from './assets/layers.png';
 import icon5 from './assets/icon-expand-arrow.png';
 import icon6 from './assets/x.png';
 import { initInbox, initToday, initUpcoming, expandProjects, initProjects, loadProject } from './pages'
-import { changePriority, deleteTodo, refresh } from './Todo';
+import { changePriority, deleteProject, deleteTodo, refresh } from './Todo';
 
 const pages = document.querySelectorAll('.page');
 
@@ -41,4 +41,9 @@ document.addEventListener('click', (e) => {
     if (e.target.parentNode.tagName === 'svg') changePriority(e.target.parentNode.id);
 
     if (e.target.className === 'list') loadProject(e.target.textContent);
+
+    if (e.target.className === 'list-delete-button') {
+        deleteProject(e.target.id);
+        initProjects();
+    }
 });
