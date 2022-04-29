@@ -1,5 +1,5 @@
 import { createList, changeIndicatorColor, wipeContent, createProject, cleanList } from './DOM';
-import { getItems, getProjects, removeItem, removeProject, setPriority, showPriority } from './storage';
+import { editTitle, getItems, getProjects, removeItem, removeProject, setPriority, showPriority } from './storage';
 import { compareAsc, compareDesc, isToday, isThisWeek } from 'date-fns';
 
 function inboxContent() {
@@ -49,6 +49,10 @@ function sortArray(array) {
 function create(arr) {
     arr.forEach(item => createList(item.title, item.date, item.id));
     setPriorities(arr);
+}
+
+function editTodoTitle(title, id) {
+    editTitle(title, id);
 }
 
 function deleteTodo(id) {
@@ -120,4 +124,4 @@ function detectBrowser(){
       }    
 }
 
-export { inboxContent, todayContent, upcomingContent, changePriority, refresh, deleteTodo, loadProjects, projectContent, deleteProject }
+export { inboxContent, todayContent, upcomingContent, changePriority, refresh, deleteTodo, loadProjects, projectContent, deleteProject, editTodoTitle }
