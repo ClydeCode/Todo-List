@@ -4,11 +4,9 @@ let projects = [];
 if (localStorage.length > 0) {
     if (localStorage.getItem('projects'))
         projects = JSON.parse(localStorage.getItem('projects'));
-    console.log(projects)
 
     if (localStorage.getItem('todos'))
         todos = JSON.parse(localStorage.getItem('todos'));
-    console.log(todos)
 }
 
 todos[0] = {id : 0, title : 'Homework', date : '2022/04/28', priority : 0, project : false}
