@@ -1,6 +1,6 @@
 import { createList, changeIndicatorColor, wipeContent, createProject, cleanList } from './DOM';
 import { getItems, getProjects, removeItem, removeProject, setPriority, showPriority } from './storage';
-import { compareAsc, isToday, isThisWeek } from 'date-fns';
+import { compareAsc, compareDesc, isToday, isThisWeek } from 'date-fns';
 
 function inboxContent() {
     let arr = sortArray(getArray());
@@ -34,9 +34,16 @@ function loadProjects() {
 }
 
 function sortArray(array) {
-    let arr = array.sort((a, b) => compareAsc(new Date(a.date), new Date(b.date)));
+    let arr;
+
+    var isChromium = !!window.chrome;
+
+    if (isChromium)
+        arr = array.sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)));
+    else
+        arr = array.sort((a, b) => compareAsc(new Date(a.date), new Date(b.date)));
     
-    return arr.sort((a, b) => a.priority < b.priority);
+    return arr.sort((a, b) => a.priority < b.priority ? 1 : -1);
 }
 
 function create(arr) {
@@ -92,6 +99,25 @@ function changePriority(id) {
     }
     
     changeIndicatorColor(id);
+}
+
+function detectBrowser(){
+                 
+    let userAgent = navigator.userAgent;
+    
+    if(userAgent.match(/chrome|chromium|crios/i)) {
+        return "chrome";
+      } else if(userAgent.match(/firefox|fxios/i)) {
+        return "firefox";
+      } else if(userAgent.match(/safari/i)) {
+        return "safari";
+      } else if(userAgent.match(/opr\//i)) {
+        return "opera";
+      } else if(userAgent.match(/edg/i)) {
+        return "edge";
+      } else {
+        return "No browser detection";
+      }    
 }
 
 export { inboxContent, todayContent, upcomingContent, changePriority, refresh, deleteTodo, loadProjects, projectContent, deleteProject }
