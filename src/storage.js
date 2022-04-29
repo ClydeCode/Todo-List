@@ -9,11 +9,6 @@ if (localStorage.length > 0) {
         todos = JSON.parse(localStorage.getItem('todos'));
 }
 
-todos[0] = {id : 0, title : 'Homework', date : '2022/04/28', priority : 0, project : false}
-todos[1] = {id : 1, title : 'Car Remont', date : '2022/04/30', priority : 0, project : false}
-todos[2] = {id : 2, title : 'Job Interview', date : '2022/04/25', priority : 0, project : false}
-todos[3] = {id : 3, title : 'Atostogos', date : '2022/05/02', priority : 0, project : false}
-
 function addItem(title, date, project = false) {
     const item = {
         id : todos.length,
@@ -36,6 +31,7 @@ function editTitle(title, id) {
     todos.forEach((item) => {
         if (item.id == id) item.title = title;
     });
+    saveArrayToStorage('todos');
 }
 
 function removeItem(id) {
