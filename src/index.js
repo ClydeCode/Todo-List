@@ -5,8 +5,8 @@ import icon3 from './assets/icon-traveler.png';
 import icon4 from './assets/layers.png';
 import icon5 from './assets/icon-expand-arrow.png';
 import icon6 from './assets/x.png';
-import { initInbox, initToday, initUpcoming, expandProjects, initProjects, loadProject } from './pages'
-import { changePriority, deleteProject, deleteTodo, refresh } from './Todo';
+import { initInbox, initToday, initUpcoming, expandProjects, initProjects, loadProject } from './pages';
+import { changePriority, deleteProject, deleteTodo, editTodoTitle, refresh } from './Todo';
 
 const pages = document.querySelectorAll('.page');
 
@@ -31,10 +31,20 @@ pages.forEach(page => page.addEventListener('click', () => {
 }));
 
 document.addEventListener('click', (e) => {
+    if (e.target.className === 'text') {
+        e.target.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                let id = e.target.parentNode.firstChild.id.split('-');
+                editTodoTitle(e.target.textContent, id[1]);
+                refresh();
+            };
+        });
+    };
+
     if (e.target.className === 'button-x') {
         deleteTodo(e.target.id);
         refresh();
-    }
+    };
     
     if (e.target.tagName === 'svg') {
         changePriority(e.target.id);
@@ -51,5 +61,5 @@ document.addEventListener('click', (e) => {
     if (e.target.className === 'list-delete-button') {
         deleteProject(e.target.id);
         initProjects();
-    }
+    };
 });
