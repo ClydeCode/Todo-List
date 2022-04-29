@@ -12,8 +12,8 @@ if (localStorage.length > 0) {
 }
 
 todos[0] = {id : 0, title : 'Homework', date : '2022/04/28', priority : 0, project : false}
-todos[1] = {id : 1, title : 'Car remont', date : '2022/04/30', priority : 0, project : false}
-todos[2] = {id : 2, title : 'Darbo pokalbis su Minde', date : '2022/04/25', priority : 0, project : false}
+todos[1] = {id : 1, title : 'Car Remont', date : '2022/04/30', priority : 0, project : false}
+todos[2] = {id : 2, title : 'Job Interview', date : '2022/04/25', priority : 0, project : false}
 todos[3] = {id : 3, title : 'Atostogos', date : '2022/05/02', priority : 0, project : false}
 
 function addItem(title, date, project = false) {
@@ -32,6 +32,12 @@ function addProject(title) {
     const project = {id : projects.length, title};
     projects.push(project);
     saveArrayToStorage('projects');
+}
+
+function editTitle(title, id) {
+    todos.forEach((item) => {
+        if (item.id == id) item.title = title;
+    });
 }
 
 function removeItem(id) {
@@ -76,4 +82,4 @@ function getProjects() {
     return projects;
 }
 
-export { addItem, addProject, removeItem, removeProject, getItems, setPriority, showPriority, getProjects }
+export { addItem, addProject, editTitle, removeItem, removeProject, getItems, setPriority, showPriority, getProjects }
