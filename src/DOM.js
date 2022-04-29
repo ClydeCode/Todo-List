@@ -1,3 +1,4 @@
+import { te } from "date-fns/locale";
 import { showPriority } from "./storage";
 
 let rotation = 180;
@@ -16,7 +17,11 @@ function createList(name, date, id) {
 
     const div = document.createElement('div');
     div.className = 'tab';
-    div.innerHTML = name;
+
+    const text = document.createElement('div');
+    text.className = 'text';
+    text.textContent = name;
+    text.contentEditable = 'true';
 
     const divDate = document.createElement('div');
     divDate.className = 'date';
@@ -24,6 +29,7 @@ function createList(name, date, id) {
 
     tabs.appendChild(div);
     div.insertBefore(createIndicator(id), div.firstChild);
+    div.appendChild(text);
     divDate.appendChild(createDeleteBtn(id));
     div.appendChild(divDate);
 }
