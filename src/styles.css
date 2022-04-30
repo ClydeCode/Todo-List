@@ -103,6 +103,7 @@ body {
     cursor: pointer;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .nav-bar .projects-list .list:hover {
@@ -112,7 +113,6 @@ body {
 .projects-list .list img {
     height: 8px;
     width: 8px;
-    margin-left: 70%;
 }
 
 .content {
@@ -122,6 +122,7 @@ body {
 
 .content .title {
     font-size: 1.6rem;
+    text-transform: capitalize;
 }
 
 .content .tabs {
