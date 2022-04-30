@@ -96,7 +96,10 @@ function createProject(name, id) {
     const lists = document.querySelector('.projects-list');
     const list = document.createElement('div');
     list.className = 'list';
-    list.innerHTML = name;
+    
+    const div = document.createElement('div');
+    div.className = 'list-title';
+    div.textContent = name;
 
     const img = document.createElement('img');
     img.src = './icons/9fc7b42bf4ed81bf00dd.png';
@@ -105,8 +108,8 @@ function createProject(name, id) {
 
     const lastChild = document.querySelector('.list.last');
 
+    list.appendChild(div);
     list.appendChild(img);
-
     lists.insertBefore(list, lastChild);
 }
 
