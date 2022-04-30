@@ -1,5 +1,5 @@
 import { createList, changeIndicatorColor, wipeContent, createProject, cleanList } from './DOM';
-import { editTitle, getItems, getProjects, removeItem, removeProject, setPriority, showPriority } from './storage';
+import { addItem, editTitle, getItems, getProjects, removeItem, removeProject, setPriority, showPriority } from './storage';
 import { compareAsc, compareDesc, isToday, isThisWeek } from 'date-fns';
 
 function inboxContent() {
@@ -49,6 +49,10 @@ function sortArray(array) {
 function create(arr) {
     arr.forEach(item => createList(item.title, item.date, item.id));
     setPriorities(arr);
+}
+
+function createDefaultTab(hasProject) {
+    addItem('Title', new Date(), hasProject);
 }
 
 function editTodoTitle(title, id) {
@@ -105,4 +109,4 @@ function changePriority(id) {
     changeIndicatorColor(id);
 }
 
-export { inboxContent, todayContent, upcomingContent, changePriority, refresh, deleteTodo, loadProjects, projectContent, deleteProject, editTodoTitle }
+export { inboxContent, todayContent, upcomingContent, changePriority, refresh, deleteTodo, loadProjects, projectContent, deleteProject, editTodoTitle, createDefaultTab }
