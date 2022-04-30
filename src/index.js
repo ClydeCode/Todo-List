@@ -64,7 +64,7 @@ document.addEventListener('click', (e) => {
         refresh();
     };
 
-    if (e.target.className === 'list') loadProject(e.target.textContent);
+    if (e.target.className === 'list') loadProject(e.target.textContent, e.target.id);
 
     if (e.target.className === 'list-delete-button') {
         deleteProject(e.target.id);
