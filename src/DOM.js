@@ -1,4 +1,4 @@
-import { te } from "date-fns/locale";
+import { lightFormat } from 'date-fns'
 import { showPriority } from "./storage";
 
 let rotation = 180;
@@ -25,11 +25,15 @@ function createList(name, date, id) {
 
     const divDate = document.createElement('div');
     divDate.className = 'date';
-    divDate.innerHTML = date;
+
+    const inputDate = document.createElement('input');
+    inputDate.type = 'date';
+    inputDate.setAttribute('value', lightFormat(new Date(date), 'yyyy-MM-dd'));
 
     tabs.appendChild(div);
     div.insertBefore(createIndicator(id), div.firstChild);
     div.appendChild(text);
+    divDate.appendChild(inputDate);
     divDate.appendChild(createDeleteBtn(id));
     div.appendChild(divDate);
 }
