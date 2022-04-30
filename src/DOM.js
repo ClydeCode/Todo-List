@@ -28,7 +28,9 @@ function createList(name, date, id) {
 
     const inputDate = document.createElement('input');
     inputDate.type = 'date';
+    inputDate.className = 'date-picker';
     inputDate.setAttribute('value', lightFormat(new Date(date), 'yyyy-MM-dd'));
+    inputDate.required = true;
 
     tabs.appendChild(div);
     div.insertBefore(createIndicator(id), div.firstChild);
