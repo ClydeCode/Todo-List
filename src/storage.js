@@ -28,8 +28,15 @@ function addProject(title) {
 }
 
 function editTitle(title, id) {
-    todos.forEach((item) => {
+    todos.forEach(item => {
         if (item.id == id) item.title = title;
+    });
+    saveArrayToStorage('todos');
+}
+
+function editDate(date, id) {
+    todos.forEach(item => {
+        if (item.id == id) item.date = date;
     });
     saveArrayToStorage('todos');
 }
@@ -76,4 +83,4 @@ function getProjects() {
     return projects;
 }
 
-export { addItem, addProject, editTitle, removeItem, removeProject, getItems, setPriority, showPriority, getProjects }
+export { addItem, addProject, editTitle, editDate, removeItem, removeProject, getItems, setPriority, showPriority, getProjects }
