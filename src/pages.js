@@ -25,8 +25,9 @@ function initProjects() {
     loadProjects();
 }
 
-function loadProject(name) {
+function loadProject(name, id) {
     wipeContent();
+    setActive(id);
     setTitle(name);
     projectContent(name);
 }
