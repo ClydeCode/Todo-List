@@ -156,6 +156,14 @@ body {
     margin-right: 15px;
 }
 
+input[type='date'] {
+    background: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: .93rem;
+}
+
 svg {
     fill: #ffffff;
     align-self: center;
