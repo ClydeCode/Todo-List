@@ -96,6 +96,7 @@ function createProject(name, id) {
     const lists = document.querySelector('.projects-list');
     const list = document.createElement('div');
     list.className = 'list';
+    list.id = `project-${id}`;
     
     const div = document.createElement('div');
     div.className = 'list-title';
