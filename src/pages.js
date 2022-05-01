@@ -29,7 +29,7 @@ function loadProject(name, id) {
     wipeContent();
     setActive(id);
     setTitle(name);
-    projectContent(name);
+    projectContent(id);
 }
 
 function initialize(name) {
