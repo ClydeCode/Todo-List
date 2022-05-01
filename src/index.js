@@ -6,7 +6,7 @@ import icon4 from './assets/layers.png';
 import icon5 from './assets/icon-expand-arrow.png';
 import icon6 from './assets/x.png';
 import { initInbox, initToday, initUpcoming, expandProjects, initProjects, loadProject } from './pages';
-import { changePriority, createDefaultTab, deleteProject, deleteTodo, editTodoTitle, refresh } from './Todo';
+import { changePriority, createDefaultTab, deleteProject, deleteTodo, editTodoTitle, refresh, removeTodosByProject } from './Todo';
 import { addProject, editDate } from './storage';
 
 const pages = document.querySelectorAll('.page');
@@ -67,15 +67,18 @@ document.addEventListener('click', (e) => {
     if (e.target.className === 'list') loadProject(e.target.textContent, e.target.id);
 
     if (e.target.className === 'list-delete-button') {
+        removeTodosByProject(e.target.id);
         deleteProject(e.target.id);
         initProjects();
+        initInbox();
     };
 
     if (e.target.className === 'create-tab-button') {
         const current = document.querySelector('.active');
+        const currentId = current.id.split('-');
 
         if (current.parentNode.className === 'projects-list') {
-            createDefaultTab(current.textContent);
+            createDefaultTab(currentId[1]);
             refresh();
         } else {
             createDefaultTab(false);
