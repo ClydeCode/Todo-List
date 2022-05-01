@@ -68,11 +68,11 @@ function deleteProject(id) {
 }
 
 function refresh() {
-    const currentPlace = document.querySelector('.title');
+    const currentPlace = document.querySelector('.title').textContent;
 
     wipeContent();
 
-    switch(currentPlace.textContent) {
+    switch(currentPlace) {
         case 'inbox':
             inboxContent();
             break;
@@ -81,6 +81,9 @@ function refresh() {
             break;
         case 'upcoming':
             upcomingContent();
+            break;
+        default:
+            projectContent(currentPlace);
             break;
     }
 }
