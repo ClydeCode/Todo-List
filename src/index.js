@@ -72,7 +72,14 @@ document.addEventListener('click', (e) => {
     };
 
     if (e.target.className === 'create-tab-button') {
-        createDefaultTab(false);
-        refresh();
+        const current = document.querySelector('.active');
+
+        if (current.parentNode.className === 'projects-list') {
+            createDefaultTab(current.textContent);
+            refresh();
+        } else {
+            createDefaultTab(false);
+            refresh();
+        }
     }
 });
