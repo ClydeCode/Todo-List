@@ -19,9 +19,10 @@ function upcomingContent() {
     create(arr);
 }
 
-function projectContent(name) {
+function projectContent(projectId) {
+    const id = projectId.split('-');
     let arr = sortArray(getArray());
-    arr = arr.filter(item => item.project === name)
+    arr = arr.filter(item => item.project == id[1]);
     create(arr);
 }
 
@@ -63,16 +64,24 @@ function deleteTodo(id) {
     removeItem(id);
 }
 
+// function removeTodosByProject(projectId) {
+//     const arr = getArray();
+
+//     arr.forEach(item => {
+//         if (item.project == projectId) deleteTodo(item.id);
+//     });
+// }
+
 function deleteProject(id) {
     removeProject(id);
 }
 
 function refresh() {
-    const currentPlace = document.querySelector('.title').textContent;
+    const active = document.querySelector('.active').id;
 
     wipeContent();
 
-    switch(currentPlace) {
+    switch(active) {
         case 'inbox':
             inboxContent();
             break;
@@ -83,7 +92,7 @@ function refresh() {
             upcomingContent();
             break;
         default:
-            projectContent(currentPlace);
+            projectContent(active);
             break;
     }
 }
