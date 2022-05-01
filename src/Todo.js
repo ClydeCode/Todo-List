@@ -51,8 +51,8 @@ function create(arr) {
     setPriorities(arr);
 }
 
-function createDefaultTab(hasProject) {
-    addItem('Title', new Date(), hasProject);
+function createDefaultTab(project) {
+    addItem('Title', new Date(), project);
 }
 
 function editTodoTitle(title, id) {
