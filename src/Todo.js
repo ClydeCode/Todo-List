@@ -43,7 +43,7 @@ function sortArray(array) {
         arr = array.sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)));
     else
         arr = array.sort((a, b) => compareAsc(new Date(a.date), new Date(b.date)));
-    
+
     return arr.sort((a, b) => a.priority < b.priority ? 1 : -1);
 }
 
@@ -64,13 +64,15 @@ function deleteTodo(id) {
     removeItem(id);
 }
 
-// function removeTodosByProject(projectId) {
-//     const arr = getArray();
+function removeTodosByProject(projectId) {
+    const arr = getArray();
 
-//     arr.forEach(item => {
-//         if (item.project == projectId) deleteTodo(item.id);
-//     });
-// }
+    for (let n = arr.length - 1; n >= 0 ; n--) {
+        if (arr[n].project == projectId) {
+            removeItem(arr[n].id);
+        };
+    };
+}
 
 function deleteProject(id) {
     removeProject(id);
@@ -121,4 +123,4 @@ function changePriority(id) {
     changeIndicatorColor(id);
 }
 
-export { inboxContent, todayContent, upcomingContent, changePriority, refresh, deleteTodo, loadProjects, projectContent, deleteProject, editTodoTitle, createDefaultTab }
+export { inboxContent, todayContent, upcomingContent, changePriority, refresh, deleteTodo, loadProjects, projectContent, deleteProject, editTodoTitle, createDefaultTab, removeTodosByProject }
