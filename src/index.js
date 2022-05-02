@@ -33,9 +33,12 @@ pages.forEach(page => page.addEventListener('click', () => {
 
 document.addEventListener('click', (e) => {
     if (e.target.className === 'text') {
+        let id = e.target.parentNode.firstChild.id.split('-');
+        e.target.addEventListener('input', (e) => {
+            editTodoTitle(e.target.textContent, id[1]);
+        });
         e.target.addEventListener('keypress', (e) => {
             if (e.key === 'Enter') {
-                let id = e.target.parentNode.firstChild.id.split('-');
                 editTodoTitle(e.target.textContent, id[1]);
                 refresh();
             };
