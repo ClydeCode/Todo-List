@@ -33,7 +33,7 @@ pages.forEach(page => page.addEventListener('click', () => {
 
 document.addEventListener('click', (e) => {
     if (e.target.className === 'text') {
-        let id = e.target.parentNode.firstChild.id.split('-');
+        let id = e.target.parentNode.parentNode.firstChild.id.split('-');
         e.target.addEventListener('input', (e) => {
             editTodoTitle(e.target.textContent, id[1]);
         });

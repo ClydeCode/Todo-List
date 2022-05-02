@@ -26,6 +26,9 @@ function createList(name, date, id) {
     const divDate = document.createElement('div');
     divDate.className = 'date';
 
+    const forInputDiv = document.createElement('div');
+    forInputDiv.className = 'forInput';
+
     const inputDate = document.createElement('input');
     inputDate.type = 'date';
     inputDate.className = 'date-picker';
@@ -34,7 +37,8 @@ function createList(name, date, id) {
 
     tabs.appendChild(div);
     div.insertBefore(createIndicator(id), div.firstChild);
-    div.appendChild(text);
+    forInputDiv.appendChild(text);
+    div.appendChild(forInputDiv);
     divDate.appendChild(inputDate);
     divDate.appendChild(createDeleteBtn(id));
     div.appendChild(divDate);
