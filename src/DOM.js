@@ -118,6 +118,22 @@ function createProject(name, id) {
     lists.insertBefore(list, lastChild);
 }
 
+function showProjectWindow() {
+    const last_list = document.querySelector('.list.last');
+    const lists = document.querySelector('.projects-list');
+
+    const div = document.createElement('input');
+    div.className = 'create-project-input';
+
+    const button = document.createElement('button');
+    button.innerHTML = 'Create';
+    button.className = 'create-project-button';
+
+    last_list.remove();
+    lists.appendChild(div);
+    lists.appendChild(button);
+}
+
 function cleanList() {
     const lists = document.querySelector('.projects-list');
 
@@ -145,4 +161,4 @@ function changeIndicatorColor(id) {
     if (showPriority(_id) === 2) svg.style.fill = BLUE;
 }
 
-export { setTitle, createList, setActive, rotateArrow, toggleList, createProject, wipeContent, changeIndicatorColor, cleanList };
+export { setTitle, createList, setActive, rotateArrow, toggleList, createProject, wipeContent, changeIndicatorColor, cleanList, showProjectWindow };
