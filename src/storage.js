@@ -22,7 +22,7 @@ function addItem(title, date, project = false) {
 }
 
 function addProject(title) {
-    const project = {id : projects.length, title};
+    const project = {id : projects.length + 1, title};
     projects.push(project);
     saveArrayToStorage('projects');
 }
