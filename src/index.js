@@ -8,6 +8,7 @@ import icon6 from './assets/x.png';
 import { initInbox, initToday, initUpcoming, expandProjects, initProjects, loadProject } from './pages';
 import { changePriority, createDefaultTab, deleteProject, deleteTodo, editTodoTitle, refresh, removeTodosByProject } from './Todo';
 import { addProject, editDate } from './storage';
+import { showProjectWindow } from './DOM';
 
 const pages = document.querySelectorAll('.page');
 
@@ -86,6 +87,15 @@ document.addEventListener('click', (e) => {
         } else {
             createDefaultTab(false);
             refresh();
-        }
-    }
+        };
+    };
+
+    if (e.target.className === 'list last') {
+        showProjectWindow();
+
+        document.querySelector('.create-project-button').addEventListener('click', () => {
+            addProject(document.querySelector('.create-project-input').value);
+            initProjects();
+        }); 
+    };
 });
