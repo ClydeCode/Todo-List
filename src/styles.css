@@ -176,7 +176,7 @@ svg {
     margin-left: 25px;
 }
 
-button {
+.create-tab-button {
     height: 60px;
     width: 60px;
     position: absolute;
