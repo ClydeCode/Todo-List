@@ -75,7 +75,7 @@ body {
 
 .nav-bar .projects-list {
     /* background-color: rgb(209, 209, 209); */
-    height: 340px;
+    max-height: 340px;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -192,4 +192,28 @@ svg {
 
 button:hover {
     background-color: rgba(255, 94, 0, .9);
+}
+
+.create-window {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    width: 300px;
+    margin-top: 15px;
+}
+
+.create-project-input {
+    border: 1px solid black;
+    border-radius: 3px;
+    outline: none;
+    padding: 2px;
+}
+
+.create-project-button {
+    margin-top: 10px;
+    border: none;
+}
+
+.create-project-button:hover {
+    background-color: rgb(255, 94, 0);
 }
