@@ -122,6 +122,9 @@ function showProjectWindow() {
     const last_list = document.querySelector('.list.last');
     const lists = document.querySelector('.projects-list');
 
+    const create_window = document.createElement('div');
+    create_window.className = 'create-window';
+
     const div = document.createElement('input');
     div.className = 'create-project-input';
 
@@ -130,8 +133,9 @@ function showProjectWindow() {
     button.className = 'create-project-button';
 
     last_list.remove();
-    lists.appendChild(div);
-    lists.appendChild(button);
+    create_window.appendChild(div);
+    create_window.appendChild(button);
+    lists.appendChild(create_window);
 }
 
 function cleanList() {
