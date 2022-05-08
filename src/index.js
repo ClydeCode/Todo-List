@@ -94,7 +94,9 @@ document.addEventListener('click', (e) => {
         showProjectWindow();
 
         document.querySelector('.create-project-button').addEventListener('click', () => {
-            addProject(document.querySelector('.create-project-input').value);
+            if (document.querySelector('.create-project-input').value) {
+                addProject(document.querySelector('.create-project-input').value);
+            };
             initProjects();
         }); 
     };
