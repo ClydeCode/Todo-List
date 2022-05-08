@@ -85,11 +85,11 @@ function removeAnyActives() {
 
 function rotateArrow() {
     document.getElementById('arrow').style.transform = `rotate(${(rotation)+'deg'})`;
-    
-    if (rotation === 180) rotation = 0;
-    else {
+
+    if (rotation === 180) 
+        rotation = 0;
+    else 
         rotation = 180;
-    };
 }
 
 function toggleList() {
