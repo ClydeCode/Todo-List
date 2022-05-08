@@ -110,6 +110,14 @@ body {
     background-color: rgba(0, 0, 0, .05);
 }
 
+.list-delete-button {
+    visibility: hidden;
+}
+
+.projects-list .list:hover .list-delete-button {
+    visibility: visible;
+}
+
 .projects-list .list img {
     height: 8px;
     width: 8px;
