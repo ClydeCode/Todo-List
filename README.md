@@ -9,4 +9,3 @@ I learned and deepened my knowledge in:
 2. Modules
 3. Clean code
 4. SOLID principles
-
