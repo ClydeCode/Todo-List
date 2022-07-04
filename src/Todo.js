@@ -1,6 +1,6 @@
 import { createList, changeIndicatorColor, wipeContent, createProject, cleanList } from './DOM';
 import { addItem, editTitle, getItems, getProjects, removeItem, removeProject, setPriority, showPriority } from './storage';
-import { compareAsc, compareDesc, isToday, isThisWeek } from 'date-fns';
+import { compareAsc, compareDesc, isToday, isThisWeek, differenceInCalendarDays } from 'date-fns';
 
 function inboxContent() {
     let arr = sortArray(getArray());
@@ -15,7 +15,10 @@ function todayContent() {
 
 function upcomingContent() {
     let arr = sortArray(getArray());
-    arr = arr.filter(item => isThisWeek(new Date(item.date)));
+    arr = arr.filter(item => {
+        const result = differenceInCalendarDays(new Date(item.date), new Date());
+        if (result >= 0 && result <= 7) return true;
+    });
     create(arr);
 }
 
